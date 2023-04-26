@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Stahltraeger
+comment0.text=\r\n\ Ein\ Stahltr\u00E4ger\r\n\r\n\ @author\ Max\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=Stahltraeger()
+comment1.text=\r\n\ Erzeugt\ einen\ Boden\r\n
+comment2.params=breite
+comment2.target=Stahltraeger(int)
+comment2.text=\r\n\ Konstruktor\ mit\ Breitenangabe\r\n\ @param\ breite\ Breite\ des\ Stahltr\u00E4gers\r\n
+comment3.params=
+comment3.target=void\ remove()
+comment3.text=\r\n\ Entfernt\ alles\r\n
+numComments=4

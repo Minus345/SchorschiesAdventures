@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Level
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Level.\r\n\ \r\n\ @author\ Max\r\n\ @version\ 1.0\r\n
+comment1.params=
+comment1.target=Level()
+comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Level\r\n
+comment2.params=
+comment2.target=void\ genereiere()
+comment2.text=\r\n\ generiert\ das\ Level\r\n
+comment3.params=
+comment3.target=void\ isEPressed()
+comment3.text=\r\n\ wird\ vom\ Player\ aufgerufen,\ wenn\ er\ "e"\ dr\u00FCckt\r\n
+comment4.params=
+comment4.target=void\ playerIsRight()
+comment4.text=\r\n\ wird\ vom\ Player\ aufgerufen,\ wenn\ er\ am\ rechten\ Rand\ ist\r\n
+comment5.params=
+comment5.target=void\ playerIsLeft()
+comment5.text=\r\n\ wird\ vom\ Player\ aufgerufen,\ wenn\ er\ am\ linken\ Rand\ ist\r\n
+numComments=6

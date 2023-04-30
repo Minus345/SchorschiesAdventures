@@ -22,6 +22,8 @@ public class L1 extends Level {
     private Stahltraeger weg;
     private Stahltraeger plattform;
     private Kiste kiste;
+    private Potion potion;
+    private Key key;
 
 
     public void genereiere() {
@@ -47,11 +49,20 @@ public class L1 extends Level {
         kiste = new Kiste();
         kiste.PositionSetzen(250,250);
         kiste.NachHintenBringen();
+
+        potion = new Potion();
+        potion.PositionSetzen(200,280);
+        potion.NachHintenBringen();
+
+        key = new Key("bester Schluessel");
+        key.PositionSetzen(400,280);
+        key.NachHintenBringen();
     }
 
     public void isEPressed() {
         if (Main.getPlayer().Berührt(tuer)) {
             System.out.println("tür wurde geöffnet - Nextes Level Laden");
+            Inv.removeKey("bester Schluessel");
             tuer.remove();
             lava.remove();
             weg.remove();
@@ -62,6 +73,17 @@ public class L1 extends Level {
         }
         if (Main.getPlayer().Berührt(kiste)) {
             System.out.println("Kiste wurde geöffnet");
+        }
+        if (Main.getPlayer().Berührt(potion)) {
+            System.out.println("Der Trank wurde gefunden");
+            Inv.setHasPotion(true);
+            potion.remove();
+            Inv.updateInv();
+        }
+        if (Main.getPlayer().Berührt(key)) {
+            System.out.println("Der Schluesel wurde gefunden");
+            key.remove();
+            Inv.addKey(key);
         }
     };
 

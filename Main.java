@@ -16,16 +16,23 @@ public class Main extends Ereignisbehandlung {
     public Main() {
         super();
         running = true;
+
         Text text = new Text();
         text.TextSetzen("← a | d →: Gehen     w : Springen");
         text.PositionSetzen(300, 500);
+
         TaktdauerSetzen(50);
+
         Starten();
+
         Level l1 = new L1();
         l1.genereiere();
+
         player = new Player();
         player.ZumStartpunktGehen();
         player.GanzNachVornBringen();
+
+        Inv.createInv();
     }
 
 

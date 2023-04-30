@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.target=Inv
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Inv.\r\n\r\n\ @author\ Max\r\n\ @version\ 1\r\n
+comment1.params=
+comment1.target=void\ createInv()
+comment2.params=
+comment2.target=void\ updateInv()
+comment3.params=
+comment3.target=boolean\ isHasPotion()
+comment4.params=hasPotion
+comment4.target=void\ setHasPotion(boolean)
+comment5.params=key
+comment5.target=void\ addKey(Key)
+comment6.params=key
+comment6.target=void\ removeKey(Key)
+comment7.params=name
+comment7.target=void\ removeKey(java.lang.String)
+comment8.params=name
+comment8.target=boolean\ hasKey(java.lang.String)
+numComments=9

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Potion
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Trank.\r\n\ \r\n\ @author\ Max\r\n\ @version\ 1\r\n
+comment1.params=
+comment1.target=Potion()
+comment2.params=
+comment2.target=void\ remove()
+numComments=3

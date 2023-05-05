@@ -1,20 +1,21 @@
+import ea.Knoten;
 
 /**
  * Beschreiben Sie hier die Klasse Level.
- * 
+ *
  * @author Max
  * @version 1.0
  */
-public abstract class Level
-{
+public abstract class Level {
 
     private boolean tuerOpend;
+    private Knoten boden;
+    private Knoten lava;
 
     /**
      * Konstruktor für Objekte der Klasse Level
      */
-    public Level()
-    {
+    public Level() {
         super();
     }
 
@@ -37,4 +38,9 @@ public abstract class Level
      * wird vom Player aufgerufen, wenn er am linken Rand ist
      */
     public abstract void playerIsLeft();
+
+    public abstract Knoten getBoden();
+
+    public abstract Knoten getLava();
+
 }

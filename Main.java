@@ -23,13 +23,21 @@ public class Main extends Game {
         super(1920, 1080);
         frame = new Knoten();
         wurzel.add(frame);
+
+        Inv.createInv();
+
         new L1().generate();
+
         Tick tick = new Tick();
-        manager.anmelden(tick, 200);
+        manager.anmelden(tick, 50);
+        tastenReagierbarAnmelden(tick);
+        tastenLosgelassenReagierbarAnmelden(tick);
+
         player = new Figur("mario.eaf");
         player.positionSetzen(200,200);
         frame.add(player);
-        tastenReagierbarAnmelden(tick);
+
+
     }
 
     @Override

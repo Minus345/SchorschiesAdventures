@@ -5,7 +5,7 @@
  * @author Max
  * @version 1.0
  */
-public abstract class Level extends Ereignisbehandlung
+public abstract class Level
 {
 
     private boolean tuerOpend;
@@ -21,7 +21,7 @@ public abstract class Level extends Ereignisbehandlung
     /**
      * generiert das Level
      */
-    public abstract void genereiere();
+    public abstract void generate();
 
     /**
      * wird vom Player aufgerufen, wenn er "e" drückt

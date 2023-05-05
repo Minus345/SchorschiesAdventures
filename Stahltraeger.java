@@ -1,3 +1,5 @@
+import ea.Rechteck;
+
 /**
  * Ein Stahlträger
  *
@@ -12,9 +14,8 @@ public class Stahltraeger extends Rechteck
      */
     public Stahltraeger()
     {
-        super();
-        GrößeSetzen(200, 25);
-        FarbeSetzen("grau");
+        super(200,25,255,25);
+        farbeSetzen("grau");
     }
 
     /**
@@ -23,16 +24,7 @@ public class Stahltraeger extends Rechteck
      */
     public Stahltraeger(int breite)
     {
-        super();
-        GrößeSetzen(breite, 25);
-        FarbeSetzen("grau");
+        super(200,25,breite,25);
+        farbeSetzen("grau");
     }
-
-    /**
-     * Entfernt alles
-     */
-    public void remove(){
-        Entfernen();
-    }
-
 }

@@ -1,3 +1,4 @@
+import ea.Rechteck;
 
 /**
  * @author Max
@@ -8,16 +9,10 @@ public class Tuer extends Rechteck {
      * Erstellt eine Tüt
      */
     public Tuer() {
-        super();
-        GrößeSetzen(50, 50);
-        FarbeSetzen("cyan");
-    }
-
-    /**
-     * Entfernt alles
-     */
-    public void remove() {
-        Entfernen();
+        super(0,0,0,0);
+        breiteSetzen(50);
+        hoeheSetzen(50);
+        farbeSetzen("cyan");
     }
 
 }

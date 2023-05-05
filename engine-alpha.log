@@ -1,0 +1,4 @@
+[Fri May 05 16:40:20 CEST 2023][WARNUNG] Datei hatte nicht die Dateierweiterung .eaf. Diese wurde automatisch ergänzt. (DateiManager.java:616)
+[Fri May 05 16:40:20 CEST 2023][ERROR] Fehler beim Lesen der Datei. Existiert die Datei mit diesem Namen wirklich?
+C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\mario.png.eaf (DateiManager.java:678)
+[Fri May 05 16:40:20 CEST 2023][ERROR] Kritischer Fehler im Ticker: Eine Ausnahme wurde nicht abgefangen. Der Ticker wurde angehalten. Die folgende StackTrace sollte dir weitere Informationen liefern. (Manager.java:199)

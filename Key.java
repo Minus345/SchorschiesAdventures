@@ -14,12 +14,9 @@ public class Key extends Item
     public Key(String name) {
         super();
         this.name = name;
-        GrößeSetzen(25, 25);
-        FarbeSetzen("magenta");
-    }
-
-    public void remove(){
-        Entfernen();
+        breiteSetzen(25);
+        hoeheSetzen(25);
+        farbeSetzen("magenta");
     }
 
     public String getName() {

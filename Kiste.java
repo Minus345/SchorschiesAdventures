@@ -1,3 +1,4 @@
+import ea.Rechteck;
 
 /**
  * @author Max
@@ -10,13 +11,10 @@ public class Kiste extends Rechteck
      */
     public Kiste()
     {
-        super();
-        GrößeSetzen(50, 50);
-        FarbeSetzen("braun");
-    }
-
-    public void remove() {
-        Entfernen();
+        super(0,0,0,0);
+        breiteSetzen(50);
+        hoeheSetzen(50);
+        farbeSetzen("braun");
     }
 
 }

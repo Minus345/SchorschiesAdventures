@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Key
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Schluessel.\r\n\ \r\n\ @author\ Max\r\n\ @version\ 1\r\n
+comment1.params=name
+comment1.target=Key(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+numComments=3

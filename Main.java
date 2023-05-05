@@ -1,46 +1,44 @@
+import ea.Figur;
+import ea.Game;
+import ea.Knoten;
+
 /**
- * Jump 'n' Run-Spiel mit dem Protagonisten Dorian
+ * Beschreiben Sie hier die Klasse Main.
  *
- * @author Johannes Neumeyer
- * @version 1.0
+ * @author Max
+ * @version 2
  */
 
-public class Main extends Ereignisbehandlung {
+public class Main extends Game {
+    private static Knoten frame;
     private static boolean running;
     private static Level aktiveLevel;
-    private static Player player;
+    private static Figur player;
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         new Main();
     }
+
     public Main() {
-        super();
-        running = true;
-
-        Text text = new Text();
-        text.TextSetzen("← a | d →: Gehen     w : Springen");
-        text.PositionSetzen(300, 500);
-
-        TaktdauerSetzen(50);
-
-        Starten();
-
-        Level l1 = new L1();
-        l1.genereiere();
-
-        player = new Player();
-        player.ZumStartpunktGehen();
-        player.GanzNachVornBringen();
-
-        Inv.createInv();
+        super(1920, 1080);
+        frame = new Knoten();
+        wurzel.add(frame);
+        new L1().generate();
+        Tick tick = new Tick();
+        manager.anmelden(tick, 200);
+        player = new Figur("mario.eaf");
+        player.positionSetzen(200,200);
+        frame.add(player);
+        tastenReagierbarAnmelden(tick);
     }
 
-
-    /**
-     * Mitverantwortlich für die Steuerung von Dorian
-     */
     @Override
-    void TaktImpulsAusführen() {
+    public void tasteReagieren(int i) {
+
+    }
+
+    public static Knoten getFrame() {
+        return frame;
     }
 
     public static boolean isRunning() {
@@ -55,7 +53,7 @@ public class Main extends Ereignisbehandlung {
         Main.aktiveLevel = aktiveLevel;
     }
 
-    public static Player getPlayer() {
+    public static Figur getPlayer() {
         return player;
     }
 }

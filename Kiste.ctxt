@@ -4,6 +4,4 @@ comment0.text=\r\n\ @author\ Max\r\n\ @version\ 1\r\n
 comment1.params=
 comment1.target=Kiste()
 comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Kiste\r\n
-comment2.params=
-comment2.target=void\ remove()
-numComments=3
+numComments=2

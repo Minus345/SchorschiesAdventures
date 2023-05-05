@@ -1,3 +1,4 @@
+import ea.Rechteck;
 
 /**
  * Beschreiben Sie hier die Klasse Lava.
@@ -13,9 +14,10 @@ public class Lava extends Rechteck
      */
     public Lava()
     {
-        super();
-        GrößeSetzen(200, 25);
-        FarbeSetzen("gelb");
+        super(0,0,0,0);
+        breiteSetzen(200);
+        hoeheSetzen(25);
+        farbeSetzen("gelb");
     }
 
     /**
@@ -24,16 +26,10 @@ public class Lava extends Rechteck
      */
     public Lava(int breite)
     {
-        super();
-        GrößeSetzen(breite, 25);
-        FarbeSetzen("gelb");
-    }
-
-    /**
-     * Entfernt alles
-     */
-    public void remove(){
-        Entfernen();
+        super(0,0,0,0);
+        breiteSetzen(breite);
+        hoeheSetzen(25);
+        farbeSetzen("gelb");
     }
 
 }

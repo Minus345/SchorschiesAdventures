@@ -9,12 +9,9 @@ public class Potion extends Item
 {
     public Potion() {
         super();
-        GrößeSetzen(25, 25);
-        FarbeSetzen("grün");
-    }
-
-    public void remove() {
-        Entfernen();
+        breiteSetzen(25);
+        hoeheSetzen(25);
+        farbeSetzen("grün");
     }
 
 }

@@ -1,9 +1,10 @@
+import ea.Knoten;
 
 /**
  * Level 1.
  *
  * @author Max
- * @version 1
+ * @version 2
  */
 public class L1 extends Level {
     /**
@@ -24,80 +25,57 @@ public class L1 extends Level {
     private Kiste kiste;
     private Potion potion;
     private Key key;
+    private Knoten level;
 
 
-    public void genereiere() {
+    public void generate() {
         Main.setAktiveLevel(this);
         System.out.println("Lade Level 1");
+        level = new Knoten();
         // Weg
         weg = new Stahltraeger(800);
-        weg.PositionSetzen(0, 400);
-        weg.NachHintenBringen();
+        weg.positionSetzen(0, 400);
+        level.add(weg);
 
         plattform = new Stahltraeger(400);
-        plattform.PositionSetzen(50, 300);
-        plattform.NachHintenBringen();
+        plattform.positionSetzen(50, 300);
+        level.add(plattform);
 
         lava = new Lava(100);
-        lava.PositionSetzen(450, 350);
-        lava.NachHintenBringen();
+        lava.positionSetzen(450, 350);
+        level.add(lava);
 
         tuer = new Tuer();
-        tuer.PositionSetzen(30, 350);
-        tuer.NachHintenBringen();
+        tuer.positionSetzen(30, 350);
+        level.add(tuer);
 
         kiste = new Kiste();
-        kiste.PositionSetzen(250,250);
-        kiste.NachHintenBringen();
+        kiste.positionSetzen(250,250);
+        level.add(kiste);
 
         potion = new Potion();
-        potion.PositionSetzen(200,280);
-        potion.NachHintenBringen();
+        potion.positionSetzen(200,280);
+        level.add(potion);
 
         key = new Key("bester Schluessel");
-        key.PositionSetzen(400,280);
-        key.NachHintenBringen();
+        key.positionSetzen(400,280);
+        level.add(key);
+
+        Main.getFrame().add(level);
     }
 
+    @Override
     public void isEPressed() {
-        if (Main.getPlayer().Berührt(tuer)) {
-            System.out.println("tür wurde geöffnet - Nextes Level Laden");
-            Inv.removeKey("bester Schluessel");
-            tuer.remove();
-            lava.remove();
-            weg.remove();
-            kiste.remove();
-            plattform.remove();
-            Level level = new L2();
-            level.genereiere();
-        }
-        if (Main.getPlayer().Berührt(kiste)) {
-            System.out.println("Kiste wurde geöffnet");
-        }
-        if (Main.getPlayer().Berührt(potion)) {
-            System.out.println("Der Trank wurde gefunden");
-            Inv.setHasPotion(true);
-            potion.remove();
-            Inv.updateInv();
-        }
-        if (Main.getPlayer().Berührt(key)) {
-            System.out.println("Der Schluesel wurde gefunden");
-            key.remove();
-            Inv.addKey(key);
-        }
-    };
 
+    }
+
+    @Override
     public void playerIsRight() {
-        System.out.println("Rechter Rand");
+
     }
 
     @Override
     public void playerIsLeft() {
-
-    }
-
-    @Override
-    void TaktImpulsAusführen() {
 
     }
 }

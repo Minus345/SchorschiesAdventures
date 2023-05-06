@@ -24,6 +24,8 @@ public class L2 extends Level {
     public void generate() {
         Main.setAktiveLevel(this);
         System.out.println("Lade Level 2");
+        Main.setText("Level 2");
+
         level = new Knoten();
         boden = new Knoten();
         // Weg
@@ -32,10 +34,13 @@ public class L2 extends Level {
         level.add(weg);
         boden.add(weg);
 
+        /*
         tuer = new Tuer();
         tuer.positionSetzen(500, 350);
         level.add(tuer);
 
+
+         */
         Main.getFrame().add(level);
     }
 

@@ -1,6 +1,6 @@
-import ea.Figur;
-import ea.Game;
-import ea.Knoten;
+import ea.*;
+
+import javax.swing.*;
 
 /**
  * Beschreiben Sie hier die Klasse Main.
@@ -14,6 +14,8 @@ public class Main extends Game {
     private static boolean running;
     private static Level aktiveLevel;
     private static Figur player;
+    private static Text subtitles;
+    private static Text debugText;
 
     public static void main(String[] args) {
         new Main();
@@ -21,8 +23,17 @@ public class Main extends Game {
 
     public Main() {
         super(1920, 1080);
+        //this.sicherheitsFrage("Schorschies Adventure");
+        //this.nachrichtSchicken("Starting");
+        //this.mausAnmelden(new Maus(3));
         frame = new Knoten();
         wurzel.add(frame);
+
+        subtitles = new Text("Text",0,450);
+        wurzel.add(subtitles);
+
+        debugText = new Text("Debug",0,0);
+        wurzel.add(debugText);
 
         Inv.createInv();
 
@@ -36,7 +47,7 @@ public class Main extends Game {
         player = new Figur("mario.eaf");
         player.positionSetzen(200,200);
         frame.add(player);
-
+        frame.dimension();
 
     }
 
@@ -63,5 +74,9 @@ public class Main extends Game {
 
     public static Figur getPlayer() {
         return player;
+    }
+
+    public static void setText(String text){
+        subtitles.setzeInhalt(text);
     }
 }

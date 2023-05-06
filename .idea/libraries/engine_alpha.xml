@@ -4,6 +4,8 @@
       <root url="jar://$PROJECT_DIR$/lib/engine-alpha.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/engine-alpha.jar!/" />
+    </SOURCES>
   </library>
 </component>

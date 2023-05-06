@@ -1,18 +1,16 @@
-import ea.Rechteck;
+import ea.Bild;
+import ea.Knoten;
 
 /**
  * @author Max
- * @version 1
+ * @version 2
  */
-public class Tuer extends Rechteck {
+public class Tuer extends Bild {
     /**
-     * Erstellt eine Tüt
+     * Erstellt eine Tür
      */
-    public Tuer() {
-        super(0,0,0,0);
-        breiteSetzen(50);
-        hoeheSetzen(50);
-        farbeSetzen("cyan");
+    public Tuer(int x, int y, int length, int height) {
+        super(x, y, length, height, "pictures/tuer.png");
     }
 
 }

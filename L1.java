@@ -1,3 +1,4 @@
+import ea.Bild;
 import ea.Knoten;
 
 /**
@@ -30,13 +31,18 @@ public class L1 extends Level {
     private Knoten lavaBoden;
 
 
-
     public void generate() {
         Main.setAktiveLevel(this);
         System.out.println("Lade Level 1");
+        Main.setText("Level 1");
+
         level = new Knoten();
         boden = new Knoten();
         lavaBoden = new Knoten();
+
+        Bild background = new Bild(0,0,1000,500,"pictures/hintergrund.png");
+        level.add(background);
+
         // Weg
         weg = new Stahltraeger(800);
         weg.positionSetzen(0, 400);
@@ -53,20 +59,20 @@ public class L1 extends Level {
         level.add(lava);
         lavaBoden.add(lava);
 
-        tuer = new Tuer();
-        tuer.positionSetzen(30, 350);
+        tuer = new Tuer(30, 350, 100, 100);
+        //tuer.positionSetzen(30, 350);
         level.add(tuer);
 
         kiste = new Kiste();
-        kiste.positionSetzen(250,250);
+        kiste.positionSetzen(250, 250);
         level.add(kiste);
 
         potion = new Potion();
-        potion.positionSetzen(200,280);
+        potion.positionSetzen(200, 280);
         level.add(potion);
 
         key = new Key("bester Schluessel");
-        key.positionSetzen(400,280);
+        key.positionSetzen(400, 280);
         level.add(key);
 
         Main.getFrame().add(level);

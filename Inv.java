@@ -15,7 +15,7 @@ public class Inv {
     private static ArrayList<Key> keys = new ArrayList<>();
 
     public static void createInv() {
-        text = new Text("text",200,200,20);
+        text = new Text("text",200,200);
         Main.getFrame().add(text);
         updateInv();
     }

@@ -1,5 +1,1 @@
-[Sat May 06 18:35:18 CEST 2023][WARNUNG] Datei hatte nicht die Dateierweiterung .eaf. Diese wurde automatisch ergänzt. (DateiManager.java:616)
-[Sat May 06 18:35:18 CEST 2023][ERROR] Fehler beim Lesen der Datei. Existiert die Datei mit diesem Namen wirklich?
-C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\tuer.png.eaf (DateiManager.java:678)
-[Sat May 06 18:35:18 CEST 2023][ERROR] Kritischer Fehler im Ticker: Eine Ausnahme wurde nicht abgefangen. Der Ticker wurde angehalten. Die folgende StackTrace sollte dir weitere Informationen liefern. (Manager.java:199)
-[Sat May 06 18:35:18 CEST 2023][ERROR] Kritischer Fehler im Ticker: Eine Ausnahme wurde nicht abgefangen. Der Ticker wurde angehalten. Die folgende StackTrace sollte dir weitere Informationen liefern. (Manager.java:199)
+[Mon May 08 22:23:48 CEST 2023][ERROR] Kritischer Fehler im Ticker: Eine Ausnahme wurde nicht abgefangen. Der Ticker wurde angehalten. Die folgende StackTrace sollte dir weitere Informationen liefern. (Manager.java:199)

@@ -34,14 +34,16 @@ public class L2 extends Level {
         level.add(weg);
         boden.add(weg);
 
-        /*
-        tuer = new Tuer();
-        tuer.positionSetzen(500, 350);
+
+        tuer = new Tuer(500,350,100,100);
         level.add(tuer);
+        level.add(tuer.getBild());
 
-
-         */
         Main.getFrame().add(level);
+        Main.getPlayer().positionSetzen(200,200);
+
+        if (Main.getPlayer() != null) Main.removePlayer();
+        if (Main.getPlayer() != null) Main.addPlayer();
     }
 
     public void isEPressed() {

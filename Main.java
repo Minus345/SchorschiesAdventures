@@ -39,15 +39,14 @@ public class Main extends Game {
 
         new L1().generate();
 
+        player = new Figur("mario.eaf");
+        player.positionSetzen(200,200);
+        frame.add(player);
+
         Tick tick = new Tick();
         manager.anmelden(tick, 50);
         tastenReagierbarAnmelden(tick);
         tastenLosgelassenReagierbarAnmelden(tick);
-
-        player = new Figur("mario.eaf");
-        player.positionSetzen(200,200);
-        frame.add(player);
-        frame.dimension();
 
     }
 
@@ -55,7 +54,13 @@ public class Main extends Game {
     public void tasteReagieren(int i) {
 
     }
+    public static void removePlayer(){
+        frame.entfernen(player);
+    }
 
+    public static void addPlayer(){
+        frame.add(player);
+    }
     public static Knoten getFrame() {
         return frame;
     }

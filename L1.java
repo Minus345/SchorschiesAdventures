@@ -20,6 +20,7 @@ public class L1 extends Level {
      */
 
     private Tuer tuer;
+    private Knoten tuerRaum;
     private Lava lava;
     private Stahltraeger weg;
     private Stahltraeger plattform;
@@ -40,7 +41,7 @@ public class L1 extends Level {
         boden = new Knoten();
         lavaBoden = new Knoten();
 
-        Bild background = new Bild(0,0,1000,500,"pictures/hintergrund.png");
+        Bild background = new Bild(0, 0, 1000, 500, "pictures/hintergrund.png");
         level.add(background);
 
         // Weg
@@ -60,45 +61,47 @@ public class L1 extends Level {
         lavaBoden.add(lava);
 
         tuer = new Tuer(30, 350, 100, 100);
-        //tuer.positionSetzen(30, 350);
         level.add(tuer);
+        level.add(tuer.getBild());
 
-        kiste = new Kiste();
-        kiste.positionSetzen(250, 250);
+        kiste = new Kiste(250, 250, 100, 100);
         level.add(kiste);
+        level.add(kiste.getBild());
 
-        potion = new Potion();
-        potion.positionSetzen(200, 280);
+        potion = new Potion(200, 280, 100, 100);
         level.add(potion);
+        level.add(potion.getBild());
 
-        key = new Key("bester Schluessel");
-        key.positionSetzen(400, 280);
+        key = new Key("bester Schluessel", 400, 280, 100, 100);
         level.add(key);
+        level.add(key.getBild());
 
         Main.getFrame().add(level);
+        if (Main.getPlayer() != null) Main.removePlayer();
+        if (Main.getPlayer() != null) Main.addPlayer();
     }
 
     @Override
     public void isEPressed() {
-        if (Main.getPlayer().schneidet(tuer)) {
+        if (Main.getPlayer().schneidet(tuer) && level.besitzt(tuer)) {
             System.out.println("tür wurde geöffnet - Nextes Level Laden");
             Inv.removeKey("bester Schluessel");
             Main.getFrame().entfernen(level);
             Level level2 = new L2();
             level2.generate();
         }
-        if (Main.getPlayer().schneidet(kiste)) {
+        if (Main.getPlayer().schneidet(kiste) && level.besitzt(kiste)) {
             System.out.println("Kiste wurde geöffnet");
         }
-        if (Main.getPlayer().schneidet(potion)) {
+        if (Main.getPlayer().schneidet(potion) && level.besitzt(potion)) {
             System.out.println("Der Trank wurde gefunden");
             Inv.setHasPotion(true);
-            level.entfernen(potion);
+            potion.remove(level);
             Inv.updateInv();
         }
-        if (Main.getPlayer().schneidet(key)) {
+        if (Main.getPlayer().schneidet(key) && level.besitzt(key)) {
             System.out.println("Der Schluesel wurde gefunden");
-            level.entfernen(key);
+            key.remove(level);
             Inv.addKey(key);
         }
     }

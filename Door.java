@@ -7,7 +7,7 @@ import ea.Rechteck;
  * @version 2
  */
 public class Door extends Rechteck {
-    private Bild picture;
+    private final Bild picture;
 
     /**
      * creates a door and it´s hitbox

@@ -1,6 +1,5 @@
 import ea.Bild;
 import ea.Knoten;
-import ea.Raum;
 import ea.Rechteck;
 
 /**

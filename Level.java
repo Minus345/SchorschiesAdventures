@@ -7,10 +7,6 @@ import ea.Knoten;
  * @version 1.0
  */
 public abstract class Level {
-    private boolean tuerOpend;
-    private Knoten boden;
-    private Knoten lava;
-
     public Level() {
         super();
     }

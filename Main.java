@@ -9,11 +9,9 @@ import ea.Text;
 
 public class Main extends Game {
     private static Knoten frame;
-    private static boolean running;
     private static Level aktiveLevel;
     private static Player player;
     private static Text subtitles;
-    private static Text debugText;
 
     public static void main(String[] args) {
         new Main();
@@ -34,7 +32,7 @@ public class Main extends Game {
         subtitles = new Text("Text", 0, 450);
         wurzel.add(subtitles);
 
-        debugText = new Text("Debug", 0, 0);
+        Text debugText = new Text("Debug V2", 0, 0);
         wurzel.add(debugText);
 
         Inv.createInv();

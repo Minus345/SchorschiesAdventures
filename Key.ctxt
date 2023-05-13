@@ -1,8 +1,12 @@
 #BlueJ class context
 comment0.target=Key
 comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Schluessel.\r\n\ \r\n\ @author\ Max\r\n\ @version\ 1\r\n
-comment1.params=name
-comment1.target=Key(java.lang.String)
+comment1.params=name\ x\ y\ length\ height
+comment1.target=Key(java.lang.String,\ int,\ int,\ int,\ int)
 comment2.params=
 comment2.target=java.lang.String\ getName()
-numComments=3
+comment3.params=
+comment3.target=ea.Bild\ getBild()
+comment4.params=level
+comment4.target=void\ remove(ea.Knoten)
+numComments=5

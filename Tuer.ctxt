@@ -1,7 +1,10 @@
 #BlueJ class context
 comment0.target=Tuer
-comment0.text=\r\n\ @author\ Max\r\n\ @version\ 1\r\n
-comment1.params=
-comment1.target=Tuer()
-comment1.text=\r\n\ Erstellt\ eine\ T\u00FCt\r\n
-numComments=2
+comment0.text=\r\n\ @author\ Max\r\n\ @version\ 2\r\n
+comment1.params=x\ y\ length\ height
+comment1.target=Tuer(int,\ int,\ int,\ int)
+comment2.params=
+comment2.target=ea.Bild\ getBild()
+comment3.params=level
+comment3.target=void\ remove(ea.Knoten)
+numComments=4

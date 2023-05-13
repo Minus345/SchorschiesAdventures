@@ -24,7 +24,7 @@ public class L1 extends Level {
     private Lava lava;
     private Stahltraeger weg;
     private Stahltraeger plattform;
-    private Kiste kiste;
+    private Chest chest;
     private Potion potion;
     private Key key;
     private Knoten level;
@@ -64,9 +64,9 @@ public class L1 extends Level {
         level.add(tuer);
         level.add(tuer.getBild());
 
-        kiste = new Kiste(250, 250, 100, 100);
-        level.add(kiste);
-        level.add(kiste.getBild());
+        chest = new Chest(250, 250, 100, 100);
+        level.add(chest);
+        level.add(chest.getBild());
 
         potion = new Potion(200, 280, 100, 100);
         level.add(potion);
@@ -90,7 +90,7 @@ public class L1 extends Level {
             Level level2 = new L2();
             level2.generate();
         }
-        if (Main.getPlayer().schneidet(kiste) && level.besitzt(kiste)) {
+        if (Main.getPlayer().schneidet(chest) && level.besitzt(chest)) {
             System.out.println("Kiste wurde geöffnet");
         }
         if (Main.getPlayer().schneidet(potion) && level.besitzt(potion)) {

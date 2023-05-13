@@ -1,7 +1,10 @@
 #BlueJ class context
-comment0.target=Kiste
+comment0.target=Chest
 comment0.text=\r\n\ @author\ Max\r\n\ @version\ 1\r\n
-comment1.params=
-comment1.target=Kiste()
-comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Kiste\r\n
-numComments=2
+comment1.params=x\ y\ length\ height
+comment1.target=Chest(int,\ int,\ int,\ int)
+comment2.params=
+comment2.target=ea.Bild\ getBild()
+comment3.params=level
+comment3.target=void\ remove(ea.Knoten)
+numComments=4

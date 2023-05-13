@@ -16,7 +16,7 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
     public void tick() {
         //wenn nichts unter dir ist dann nach unten fallen (nicht springen)
         if (!Main.getPlayer().schneidet(Main.getAktiveLevel().getBoden()) && !jumpWeiter) {
-            Main.getPlayer().positionSetzen(Main.getPlayer().getX(), Main.getPlayer().getY() + 8);
+            Main.getPlayer().setPosition(Main.getPlayer().getX(), Main.getPlayer().getY() + 8);
             springenCounter = 0;
         }
 
@@ -29,12 +29,12 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
             jumpCounter++;
             //Wenn Player vom Boden weg ist und gegen die Decke stöst
             if (jumpCounter > 10 && isJumpIntoSealing()) {
-                Main.getPlayer().positionSetzen(Main.getPlayer().getX(), Main.getPlayer().getY() + 50);
+                Main.getPlayer().setPosition(Main.getPlayer().getX(), Main.getPlayer().getY() + 50);
                 jumpCounter = 0;
                 jumpWeiter = false;
             }
             if (jumpCounter < 20) { //höhe vom Sprung in Zeit
-                Main.getPlayer().positionSetzen(Main.getPlayer().getX(), Main.getPlayer().getY() - 8);
+                Main.getPlayer().setPosition(Main.getPlayer().getX(), Main.getPlayer().getY() - 8);
             } else {
                 jumpCounter = 0;
                 jumpWeiter = false;
@@ -51,10 +51,10 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
         }
 
         if (a) {
-            Main.getPlayer().positionSetzen(Main.getPlayer().getX() - 6, Main.getPlayer().getY());
+            Main.getPlayer().setPosition(Main.getPlayer().getX() - 6, Main.getPlayer().getY());
         }
         if (d) {
-            Main.getPlayer().positionSetzen(Main.getPlayer().getX() + 6, Main.getPlayer().getY());
+            Main.getPlayer().setPosition(Main.getPlayer().getX() + 6, Main.getPlayer().getY());
         }
     }
 
@@ -79,7 +79,7 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
                 //System.out.println("W");
                 if (allowJumpFormGround()) {
                     System.out.println("jump");
-                    Main.getPlayer().positionSetzen(Main.getPlayer().getX(), Main.getPlayer().getY() - 2);
+                    Main.getPlayer().setPosition(Main.getPlayer().getX(), Main.getPlayer().getY() - 2);
                     jumpWeiter = true;
                 }
                 break;

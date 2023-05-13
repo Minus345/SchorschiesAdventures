@@ -6,13 +6,13 @@ import ea.Rechteck;
  * @author Max
  * @version 1
  */
-public class Kiste extends Rechteck
+public class Chest extends Rechteck
 {
     /**
      * Konstruktor für Objekte der Klasse Kiste
      */
     private Bild bild;
-    public Kiste(int x, int y, int length, int height)
+    public Chest(int x, int y, int length, int height)
     {
         super(x, y, length, height);
         bild = new Bild(x, y, length, height, "pictures/kiste.png");

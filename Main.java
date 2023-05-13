@@ -1,6 +1,6 @@
-import ea.*;
-
-import javax.swing.*;
+import ea.Game;
+import ea.Knoten;
+import ea.Text;
 
 /**
  * Beschreiben Sie hier die Klasse Main.
@@ -13,7 +13,7 @@ public class Main extends Game {
     private static Knoten frame;
     private static boolean running;
     private static Level aktiveLevel;
-    private static Figur player;
+    private static Player player;
     private static Text subtitles;
     private static Text debugText;
 
@@ -29,19 +29,19 @@ public class Main extends Game {
         frame = new Knoten();
         wurzel.add(frame);
 
-        subtitles = new Text("Text",0,450);
+        subtitles = new Text("Text", 0, 450);
         wurzel.add(subtitles);
 
-        debugText = new Text("Debug",0,0);
+        debugText = new Text("Debug", 0, 0);
         wurzel.add(debugText);
 
         Inv.createInv();
 
         new L1().generate();
 
-        player = new Figur("mario.eaf");
-        player.positionSetzen(200,200);
-        frame.add(player);
+        //player = new Figur("mario.eaf");
+        player = new Player(200, 200, 50, 50, frame);
+        player.setPosition(0,0);
 
         Tick tick = new Tick();
         manager.anmelden(tick, 50);
@@ -54,13 +54,15 @@ public class Main extends Game {
     public void tasteReagieren(int i) {
 
     }
-    public static void removePlayer(){
-        frame.entfernen(player);
+
+    public static void removePlayer() {
+        player.remove();
     }
 
-    public static void addPlayer(){
-        frame.add(player);
+    public static void addPlayer() {
+        player.add();
     }
+
     public static Knoten getFrame() {
         return frame;
     }
@@ -77,11 +79,11 @@ public class Main extends Game {
         Main.aktiveLevel = aktiveLevel;
     }
 
-    public static Figur getPlayer() {
+    public static Player getPlayer() {
         return player;
     }
 
-    public static void setText(String text){
+    public static void setText(String text) {
         subtitles.setzeInhalt(text);
     }
 }

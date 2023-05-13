@@ -1,20 +1,26 @@
 #BlueJ class context
 comment0.target=Inv
-comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Inv.\r\n\r\n\ @author\ Max\r\n\ @version\ 2\r\n
+comment0.text=\r\n\ @author\ Max\r\n\ @version\ 2\r\n
 comment1.params=
 comment1.target=void\ createInv()
+comment1.text=\r\n\ creates\ the\ inventory\ and\ the\ display\ text\ in\ the\ upper\ right\ corner\r\n
 comment2.params=
 comment2.target=void\ updateInv()
+comment2.text=\r\n\ updates\ the\ inventory\ so\ the\ new\ items\ are\ visible\ to\ the\ player\r\n
 comment3.params=
 comment3.target=boolean\ isHasPotion()
 comment4.params=hasPotion
 comment4.target=void\ setHasPotion(boolean)
 comment5.params=key
 comment5.target=void\ addKey(Key)
+comment5.text=\r\n\ adds\ a\ key\ to\ the\ key\ list\r\n\r\n\ @param\ key\ key\r\n
 comment6.params=key
 comment6.target=void\ removeKey(Key)
+comment6.text=\r\n\ removes\ the\ key\ out\ of\ the\ key\ list\r\n\r\n\ @param\ key\ key\r\n
 comment7.params=name
 comment7.target=void\ removeKey(java.lang.String)
+comment7.text=\r\n\ removes\ the\ key\ out\ of\ the\ key\ list\r\n\r\n\ @param\ name\ key-name\r\n
 comment8.params=name
 comment8.target=boolean\ hasKey(java.lang.String)
+comment8.text=\r\n\ checks\ if\ the\ key\ is\ in\ the\ inventory\r\n\r\n\ @param\ name\ key-name\r\n
 numComments=9

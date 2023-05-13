@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Player
+comment0.text=\r\n\ Klass\ for\ the\ player,\ with\ Methods\ for\ setting\ the\ position,\ add\ and\ removing\ the\ player\r\n\r\n\ @author\ max\r\n\ @version\ 2\r\n
+comment1.params=x\ y\ length\ height\ room
+comment1.target=Player(int,\ int,\ int,\ int,\ ea.Knoten)
+comment1.text=\r\n\ Creates\ the\ player\ and\ it\u00B4s\ hitbox\ ("Rechteck")\r\n\r\n\ @param\ x\ \ \ \ \ \ x-Coordinate\ of\ the\ player\ and\ it\u00B4s\ hitbox\r\n\ @param\ y\ \ \ \ \ \ y-Coordinate\ of\ the\ player\ and\ it\u00B4s\ hitbox\r\n\ @param\ length\ the\ length\ of\ the\ player\ and\ it\u00B4s\ hitbox\r\n\ @param\ height\ the\ height\ of\ the\ player\ and\ it\u00B4s\ hitbox\r\n\ @param\ room\ \ \ the\ "Knoten"\ where\ the\ player\ and\ the\ hitbox\ needs\ to\ be\ added\ in\r\n
+comment2.params=x\ y
+comment2.target=void\ setPosition(float,\ float)
+comment2.text=\r\n\ sets\ the\ position\ for\ the\ player\ and\ the\ hitbox\r\n\r\n\ @param\ x\ x-Coordinate\r\n\ @param\ y\ Y-Coordinate\r\n
+comment3.params=
+comment3.target=void\ add()
+comment3.text=\r\n\ adds\ the\ player\ and\ the\ hitbox\ to\ the\ room\r\n
+comment4.params=
+comment4.target=void\ remove()
+comment4.text=\r\n\ removes\ the\ player\ and\ the\ hitbox\ to\ the\ room\r\n
+numComments=5

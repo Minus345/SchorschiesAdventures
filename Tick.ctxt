@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Tick
+comment1.params=
+comment1.target=void\ tick()
+comment1.text=\r\n\ the\ method\ is\ called\ every\ tick\r\n
+comment2.params=
+comment2.target=boolean\ allowJumpFormGround()
+comment3.params=
+comment3.target=boolean\ isJumpIntoSealing()
+comment4.params=i
+comment4.target=void\ reagieren(int)
+comment4.text=\r\n\ is\ called\ whenever\ a\ key\ is\ pressed\ and\ executes\ the\ key\ funktion\r\n\r\n\ @param\ i\ input\ key\r\n
+comment5.params=i
+comment5.target=void\ tasteLosgelassen(int)
+comment5.text=\r\n\ is\ called\ whenever\ a\ key\ is\ not\ more\ pressed\r\n\r\n\ @param\ i\ input\ key\r\n
+numComments=6

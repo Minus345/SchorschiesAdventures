@@ -1,10 +1,10 @@
 #BlueJ class context
 comment0.target=Lava
-comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Lava.\r\n\ \r\n\ @author\ Max\r\n\ @version\ 1.0\r\n
+comment0.text=\r\n\ @author\ Max\r\n\ @version\ 2\r\n
 comment1.params=
 comment1.target=Lava()
-comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Lava\r\n
-comment2.params=breite
+comment1.text=\r\n\ creates\ lava\r\n
+comment2.params=length
 comment2.target=Lava(int)
-comment2.text=\r\n\ Konstruktor\ mit\ Breitenangabe\r\n\ @param\ breite\ Breite\ der\ Lava\r\n
+comment2.text=\r\n\ @param\ length\ length\ for\ the\ lava\r\n
 numComments=3

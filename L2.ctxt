@@ -1,9 +1,8 @@
 #BlueJ class context
 comment0.target=L2
-comment0.text=\r\n\ Level\ 1.\r\n\r\n\ @author\ Max\r\n\ @version\ 1\r\n
+comment0.text=\r\n\ Level\ 2.\r\n\r\n\ @author\ Max\r\n\ @version\ 2\r\n
 comment1.params=
 comment1.target=L2()
-comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ L2\r\n
 comment2.params=
 comment2.target=void\ generate()
 comment3.params=
@@ -13,7 +12,7 @@ comment4.target=void\ playerIsRight()
 comment5.params=
 comment5.target=void\ playerIsLeft()
 comment6.params=
-comment6.target=ea.Knoten\ getBoden()
+comment6.target=ea.Knoten\ getFloor()
 comment7.params=
 comment7.target=ea.Knoten\ getLava()
 numComments=8

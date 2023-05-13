@@ -1,30 +1,29 @@
 import ea.Bild;
 import ea.Knoten;
-import ea.Raum;
 import ea.Rechteck;
 
 /**
  * @author Max
  * @version 2
  */
-public class Potion extends Rechteck {
-    private final Bild picture;
+public class Door extends Rechteck {
+    private Bild picture;
 
     /**
-     * creates a potion and it´s hitbox
+     * creates a door and it´s hitbox
      *
      * @param x      x-Coordinate
      * @param y      y-Coordinate
      * @param length length
      * @param height height
      */
-    public Potion(int x,int y,int length, int height) {
+    public Door(int x, int y, int length, int height) {
         super(x, y, length, height);
-        picture = new Bild(x, y, length, height, "pictures/potion.png");
+        picture = new Bild(x, y, length, height, "pictures/tuer.png");
         this.sichtbarSetzen(false);
     }
 
-    public Bild getBild() {
+    public Bild getPicture() {
         return picture;
     }
 

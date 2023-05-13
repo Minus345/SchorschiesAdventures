@@ -8,22 +8,15 @@ import ea.Knoten;
  * @version 2
  */
 public class L1 extends Level {
-    /**
-     * Konstruktor für Objekte der Klasse L1
-     */
     public L1() {
         super();
     }
 
-    /**
-     * Generiert die Map
-     */
-
-    private Tuer tuer;
+    private Door door;
     private Knoten tuerRaum;
     private Lava lava;
-    private Stahltraeger weg;
-    private Stahltraeger plattform;
+    private Floor weg;
+    private Floor plattform;
     private Chest chest;
     private Potion potion;
     private Key key;
@@ -45,12 +38,12 @@ public class L1 extends Level {
         level.add(background);
 
         // Weg
-        weg = new Stahltraeger(800);
+        weg = new Floor(800);
         weg.positionSetzen(0, 400);
         level.add(weg);
         boden.add(weg);
 
-        plattform = new Stahltraeger(400);
+        plattform = new Floor(400);
         plattform.positionSetzen(50, 300);
         level.add(plattform);
         boden.add(plattform);
@@ -60,13 +53,13 @@ public class L1 extends Level {
         level.add(lava);
         lavaBoden.add(lava);
 
-        tuer = new Tuer(30, 350, 100, 100);
-        level.add(tuer);
-        level.add(tuer.getBild());
+        door = new Door(30, 350, 100, 100);
+        level.add(door);
+        level.add(door.getPicture());
 
         chest = new Chest(250, 250, 100, 100);
         level.add(chest);
-        level.add(chest.getBild());
+        level.add(chest.getPicture());
 
         potion = new Potion(200, 280, 100, 100);
         level.add(potion);
@@ -74,16 +67,16 @@ public class L1 extends Level {
 
         key = new Key("bester Schluessel", 400, 280, 100, 100);
         level.add(key);
-        level.add(key.getBild());
+        level.add(key.getPicture());
 
         Main.getFrame().add(level);
-        if (Main.getPlayer() != null) Main.removePlayer();
-        if (Main.getPlayer() != null) Main.addPlayer();
+        if (Main.getPlayer() != null) Main.getPlayer().remove();
+        if (Main.getPlayer() != null) Main.getPlayer().add();
     }
 
     @Override
     public void isEPressed() {
-        if (Main.getPlayer().schneidet(tuer) && level.besitzt(tuer)) {
+        if (Main.getPlayer().schneidet(door) && level.besitzt(door)) {
             System.out.println("tür wurde geöffnet - Nextes Level Laden");
             Inv.removeKey("bester Schluessel");
             Main.getFrame().entfernen(level);
@@ -117,7 +110,7 @@ public class L1 extends Level {
     }
 
     @Override
-    public Knoten getBoden() {
+    public Knoten getFloor() {
         return boden;
     }
 

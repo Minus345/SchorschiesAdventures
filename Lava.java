@@ -1,33 +1,27 @@
 import ea.Rechteck;
 
 /**
- * Beschreiben Sie hier die Klasse Lava.
- * 
  * @author Max
- * @version 1.0
+ * @version 2
  */
-public class Lava extends Rechteck
-{
+public class Lava extends Rechteck {
 
     /**
-     * Konstruktor für Objekte der Klasse Lava
+     * creates lava
      */
-    public Lava()
-    {
-        super(0,0,0,0);
+    public Lava() {
+        super(0, 0, 0, 0);
         breiteSetzen(200);
         hoeheSetzen(25);
         farbeSetzen("gelb");
     }
 
     /**
-     * Konstruktor mit Breitenangabe
-     * @param breite Breite der Lava
+     * @param length length for the lava
      */
-    public Lava(int breite)
-    {
-        super(0,0,0,0);
-        breiteSetzen(breite);
+    public Lava(int length) {
+        super(0, 0, 0, 0);
+        breiteSetzen(length);
         hoeheSetzen(25);
         farbeSetzen("gelb");
     }

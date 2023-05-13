@@ -1,22 +1,18 @@
 import ea.Knoten;
-import ea.Raum;
 
 /**
- * Level 1.
+ * Level 2.
  *
  * @author Max
- * @version 1
+ * @version 2
  */
 public class L2 extends Level {
-    /**
-     * Konstruktor für Objekte der Klasse L2
-     */
     public L2() {
         super();
     }
 
-    private Tuer tuer;
-    private Stahltraeger weg;
+    private Door door;
+    private Floor weg;
     private Knoten level;
     private Knoten boden;
 
@@ -29,25 +25,25 @@ public class L2 extends Level {
         level = new Knoten();
         boden = new Knoten();
         // Weg
-        weg = new Stahltraeger(800);
+        weg = new Floor(800);
         weg.positionSetzen(0, 400);
         level.add(weg);
         boden.add(weg);
 
 
-        tuer = new Tuer(500,350,100,100);
-        level.add(tuer);
-        level.add(tuer.getBild());
+        door = new Door(500,350,100,100);
+        level.add(door);
+        level.add(door.getPicture());
 
         Main.getFrame().add(level);
         Main.getPlayer().positionSetzen(200,200);
 
-        if (Main.getPlayer() != null) Main.removePlayer();
-        if (Main.getPlayer() != null) Main.addPlayer();
+        if (Main.getPlayer() != null) Main.getPlayer().remove();
+        if (Main.getPlayer() != null) Main.getPlayer().add();
     }
 
     public void isEPressed() {
-        if (Main.getPlayer().schneidet(tuer)) {
+        if (Main.getPlayer().schneidet(door)) {
             System.out.println("tür wurde geöffnet - Nextes Level Laden");
             Main.getFrame().entfernen(level);
             Level level1 = new L1();
@@ -65,7 +61,7 @@ public class L2 extends Level {
     }
 
     @Override
-    public Knoten getBoden() {
+    public Knoten getFloor() {
         return boden;
     }
 

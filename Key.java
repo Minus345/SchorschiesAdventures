@@ -3,21 +3,26 @@ import ea.Knoten;
 import ea.Rechteck;
 
 /**
- * Beschreiben Sie hier die Klasse Schluessel.
- * 
  * @author Max
- * @version 1
+ * @version 2
  */
 public class Key extends Rechteck {
+    private final Bild picture;
+    private final String name;
+
     /**
-     * Erzeugt einen Schluessel
+     * creates a key and it´s hitbox
+     *
+     * @param x      x-Coordinate
+     * @param y      y-Coordinate
+     * @param length length
+     * @param height height
+     * @param name   the name of the key wich is displayed in the inventory
      */
-    private Bild bild;
-    private String name;
-    public Key(String name,int x,int y, int length, int height) {
+    public Key(String name, int x, int y, int length, int height) {
         super(x, y, length, height);
         this.name = name;
-        bild = new Bild(x, y, length, height, "pictures/key.png");
+        picture = new Bild(x, y, length, height, "pictures/key.png");
         this.sichtbarSetzen(false);
     }
 
@@ -25,12 +30,12 @@ public class Key extends Rechteck {
         return name;
     }
 
-    public Bild getBild() {
-        return bild;
+    public Bild getPicture() {
+        return picture;
     }
 
     public void remove(Knoten level) {
-        level.entfernen(bild);
+        level.entfernen(picture);
         level.entfernen(this);
     }
 }

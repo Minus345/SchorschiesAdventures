@@ -11,35 +11,38 @@ public abstract class Level {
     private Knoten boden;
     private Knoten lava;
 
-    /**
-     * Konstruktor für Objekte der Klasse Level
-     */
     public Level() {
         super();
     }
 
     /**
-     * generiert das Level
+     * generates the level
      */
     public abstract void generate();
 
     /**
-     * wird vom Player aufgerufen, wenn er "e" drückt
+     * will be called wenn the player press "e"
      */
     public abstract void isEPressed();
 
     /**
-     * wird vom Player aufgerufen, wenn er am rechten Rand ist
+     * will be called wenn the player is near the right boarder
      */
     public abstract void playerIsRight();
 
     /**
-     * wird vom Player aufgerufen, wenn er am linken Rand ist
+     * will be called wenn the player is near the left boarder
      */
     public abstract void playerIsLeft();
 
-    public abstract Knoten getBoden();
+    /**
+     * @return returns the "Knoten" floor, where all objekts, from the floor, are stored in
+     */
+    public abstract Knoten getFloor();
 
+    /**
+     * @return returns the "Knoten" lava, where all objekts, which are lava, are stored in
+     */
     public abstract Knoten getLava();
 
 }

@@ -4,20 +4,21 @@ import ea.Ticker;
 
 public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierbar {
 
-    private int springenCounter;
-    private boolean jumpWeiter;
-    private boolean jumpIntoSealing;
+    private boolean continueJumping;
     private int jumpCounter;
+
     private boolean w;
     private boolean a;
     private boolean d;
 
 
+    /**
+     * the method is called every tick
+     */
     public void tick() {
         //wenn nichts unter dir ist dann nach unten fallen (nicht springen)
-        if (!Main.getPlayer().schneidet(Main.getAktiveLevel().getBoden()) && !jumpWeiter) {
+        if (!Main.getPlayer().schneidet(Main.getAktiveLevel().getFloor()) && !continueJumping) {
             Main.getPlayer().setPosition(Main.getPlayer().getX(), Main.getPlayer().getY() + 8);
-            springenCounter = 0;
         }
 
         if (Main.getAktiveLevel().getLava() != null && Main.getPlayer().schneidet(Main.getAktiveLevel().getLava())) { //berührung mit Lava
@@ -25,19 +26,19 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
             System.out.println("in Lava gefallen");
         }
 
-        if (jumpWeiter) {
+        if (continueJumping) {
             jumpCounter++;
             //Wenn Player vom Boden weg ist und gegen die Decke stöst
             if (jumpCounter > 10 && isJumpIntoSealing()) {
                 Main.getPlayer().setPosition(Main.getPlayer().getX(), Main.getPlayer().getY() + 50);
                 jumpCounter = 0;
-                jumpWeiter = false;
+                continueJumping = false;
             }
             if (jumpCounter < 20) { //höhe vom Sprung in Zeit
                 Main.getPlayer().setPosition(Main.getPlayer().getX(), Main.getPlayer().getY() - 8);
             } else {
                 jumpCounter = 0;
-                jumpWeiter = false;
+                continueJumping = false;
             }
         }
 
@@ -58,20 +59,26 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
         }
     }
 
+    //are the same methods????
     private boolean allowJumpFormGround() {
-        if (Main.getPlayer().schneidet(Main.getAktiveLevel().getBoden())) {
+        if (Main.getPlayer().schneidet(Main.getAktiveLevel().getFloor())) {
             return true;
         }
         return false;
     }
 
     private boolean isJumpIntoSealing() {
-        if (Main.getPlayer().schneidet(Main.getAktiveLevel().getBoden())) {
+        if (Main.getPlayer().schneidet(Main.getAktiveLevel().getFloor())) {
             return true;
         }
         return false;
     }
 
+    /**
+     * is called whenever a key is pressed and executes the key funktion
+     *
+     * @param i input key
+     */
     @Override
     public void reagieren(int i) {
         switch (i) {
@@ -80,7 +87,7 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
                 if (allowJumpFormGround()) {
                     System.out.println("jump");
                     Main.getPlayer().setPosition(Main.getPlayer().getX(), Main.getPlayer().getY() - 2);
-                    jumpWeiter = true;
+                    continueJumping = true;
                 }
                 break;
             case 0:
@@ -104,6 +111,11 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
         }
     }
 
+    /**
+     * is called whenever a key is not more pressed
+     *
+     * @param i input key
+     */
     public void tasteLosgelassen(int i) {
         switch (i) {
             case 22:

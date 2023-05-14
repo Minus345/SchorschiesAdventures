@@ -1,10 +1,10 @@
 #BlueJ class context
 comment0.target=Lava
 comment0.text=\r\n\ @author\ Max\r\n\ @version\ 2\r\n
-comment1.params=
-comment1.target=Lava()
+comment1.params=room
+comment1.target=Lava(ea.Knoten)
 comment1.text=\r\n\ creates\ lava\r\n
-comment2.params=length
-comment2.target=Lava(int)
+comment2.params=length\ room
+comment2.target=Lava(int,\ ea.Knoten)
 comment2.text=\r\n\ @param\ length\ length\ for\ the\ lava\r\n
 numComments=3

@@ -9,6 +9,7 @@ import ea.Rechteck;
 public class Key extends Rechteck {
     private final Bild picture;
     private final String name;
+    private final Knoten room;
 
     /**
      * creates a key and it´s hitbox
@@ -19,23 +20,22 @@ public class Key extends Rechteck {
      * @param height height
      * @param name   the name of the key wich is displayed in the inventory
      */
-    public Key(String name, int x, int y, int length, int height) {
+    public Key(String name, int x, int y, int length, int height, Knoten room) {
         super(x, y, length, height);
+        this.room = room;
         this.name = name;
         picture = new Bild(x, y, length, height, "pictures/key.png");
         this.sichtbarSetzen(false);
+        room.add(this);
+        room.add(picture);
     }
 
     public String getName() {
         return name;
     }
 
-    public Bild getPicture() {
-        return picture;
-    }
-
-    public void remove(Knoten level) {
-        level.entfernen(picture);
-        level.entfernen(this);
+    public void remove() {
+        room.entfernen(picture);
+        room.entfernen(this);
     }
 }

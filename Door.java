@@ -8,6 +8,7 @@ import ea.Rechteck;
  */
 public class Door extends Rechteck {
     private final Bild picture;
+    private final Knoten room;
 
     /**
      * creates a door and it´s hitbox
@@ -16,19 +17,19 @@ public class Door extends Rechteck {
      * @param y      y-Coordinate
      * @param length length
      * @param height height
+     * @param room   the "Knoten" wehre the Door needs to be placed in
      */
-    public Door(int x, int y, int length, int height) {
+    public Door(int x, int y, int length, int height, Knoten room) {
         super(x, y, length, height);
+        this.room = room;
         picture = new Bild(x, y, length, height, "pictures/tuer.png");
         this.sichtbarSetzen(false);
+        room.add(this);
+        room.add(picture);
     }
 
-    public Bild getPicture() {
-        return picture;
-    }
-
-    public void remove(Knoten level) {
-        level.entfernen(picture);
-        level.entfernen(this);
+    public void remove() {
+        room.entfernen(picture);
+        room.entfernen(this);
     }
 }

@@ -7,14 +7,13 @@ import ea.Knoten;
  * @version 2
  */
 public class L2 extends Level {
-    public L2() {
-        super();
-    }
-
     private Door door;
     private Floor weg;
     private Knoten level;
     private Knoten boden;
+    public L2() {
+        super();
+    }
 
     @Override
     public void generate() {
@@ -25,18 +24,15 @@ public class L2 extends Level {
         level = new Knoten();
         boden = new Knoten();
         // Weg
-        weg = new Floor(800);
+        weg = new Floor(0, 400, 800, level);
         weg.positionSetzen(0, 400);
         level.add(weg);
         boden.add(weg);
 
-
-        door = new Door(500,350,100,100);
-        level.add(door);
-        level.add(door.getPicture());
+        door = new Door(500, 350, 100, 100, level);
 
         Main.getFrame().add(level);
-        Main.getPlayer().positionSetzen(200,200);
+        Main.getPlayer().positionSetzen(200, 200);
 
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();

@@ -9,6 +9,7 @@ import ea.Rechteck;
 public class Chest extends Rechteck {
 
     private final Bild picture;
+    private final Knoten room;
 
     /**
      * creates a chest and it´s hitbox
@@ -18,18 +19,18 @@ public class Chest extends Rechteck {
      * @param length length
      * @param height height
      */
-    public Chest(int x, int y, int length, int height) {
+    public Chest(int x, int y, int length, int height, Knoten room) {
         super(x, y, length, height);
+        this.room = room;
         picture = new Bild(x, y, length, height, "pictures/kiste.png");
         this.sichtbarSetzen(false);
+        room.add(this);
+        room.add(picture);
     }
 
-    public Bild getPicture() {
-        return picture;
-    }
 
-    public void remove(Knoten level) {
-        level.entfernen(picture);
-        level.entfernen(this);
+    public void remove() {
+        room.entfernen(picture);
+        room.entfernen(this);
     }
 }

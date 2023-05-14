@@ -1,13 +1,11 @@
 #BlueJ class context
 comment0.target=Key
 comment0.text=\r\n\ @author\ Max\r\n\ @version\ 2\r\n
-comment1.params=name\ x\ y\ length\ height
-comment1.target=Key(java.lang.String,\ int,\ int,\ int,\ int)
+comment1.params=name\ x\ y\ length\ height\ room
+comment1.target=Key(java.lang.String,\ int,\ int,\ int,\ int,\ ea.Knoten)
 comment1.text=\r\n\ creates\ a\ key\ and\ it\u00B4s\ hitbox\r\n\r\n\ @param\ x\ \ \ \ \ \ x-Coordinate\r\n\ @param\ y\ \ \ \ \ \ y-Coordinate\r\n\ @param\ length\ length\r\n\ @param\ height\ height\r\n\ @param\ name\ \ \ the\ name\ of\ the\ key\ wich\ is\ displayed\ in\ the\ inventory\r\n
 comment2.params=
 comment2.target=java.lang.String\ getName()
 comment3.params=
-comment3.target=ea.Bild\ getPicture()
-comment4.params=level
-comment4.target=void\ remove(ea.Knoten)
-numComments=5
+comment3.target=void\ remove()
+numComments=4

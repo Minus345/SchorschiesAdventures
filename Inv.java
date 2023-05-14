@@ -7,9 +7,9 @@ import java.util.ArrayList;
  * @version 2
  */
 public class Inv {
+    private static final ArrayList<Key> keys = new ArrayList<>();
     public static boolean hasPotion;
     private static Text text;
-    private static final ArrayList<Key> keys = new ArrayList<>();
 
     /**
      * creates the inventory and the display text in the upper right corner

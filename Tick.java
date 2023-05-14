@@ -30,7 +30,7 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
             jumpCounter++;
             //Wenn Player vom Boden weg ist und gegen die Decke stöst
             if (jumpCounter > 10 && isJumpIntoSealing()) {
-                Main.getPlayer().setPosition(Main.getPlayer().getX(), Main.getPlayer().getY() + 50);
+                Main.getPlayer().setPosition(Main.getPlayer().getX(), Main.getPlayer().getY() + 70);
                 jumpCounter = 0;
                 continueJumping = false;
             }

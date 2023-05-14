@@ -8,6 +8,7 @@ import ea.Rechteck;
  */
 public class Potion extends Rechteck {
     private final Bild picture;
+    private final Knoten room;
 
     /**
      * creates a potion and it´s hitbox
@@ -17,18 +18,17 @@ public class Potion extends Rechteck {
      * @param length length
      * @param height height
      */
-    public Potion(int x,int y,int length, int height) {
+    public Potion(int x, int y, int length, int height, Knoten room) {
         super(x, y, length, height);
+        this.room = room;
         picture = new Bild(x, y, length, height, "pictures/potion.png");
         this.sichtbarSetzen(false);
+        room.add(this);
+        room.add(picture);
     }
 
-    public Bild getBild() {
-        return picture;
-    }
-
-    public void remove(Knoten level) {
-        level.entfernen(picture);
-        level.entfernen(this);
+    public void remove() {
+        room.entfernen(picture);
+        room.entfernen(this);
     }
 }

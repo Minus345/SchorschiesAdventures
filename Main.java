@@ -13,10 +13,6 @@ public class Main extends Game {
     private static Player player;
     private static Text subtitles;
 
-    public static void main(String[] args) {
-        new Main();
-    }
-
     /**
      * Main method where all starts
      * create all necessary objects
@@ -49,8 +45,8 @@ public class Main extends Game {
 
     }
 
-    @Override
-    public void tasteReagieren(int i) {
+    public static void main(String[] args) {
+        new Main();
     }
 
     public static Knoten getFrame() {
@@ -74,5 +70,9 @@ public class Main extends Game {
      */
     public static void setText(String text) {
         subtitles.setzeInhalt(text);
+    }
+
+    @Override
+    public void tasteReagieren(int i) {
     }
 }

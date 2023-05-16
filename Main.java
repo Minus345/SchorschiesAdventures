@@ -18,7 +18,7 @@ public class Main extends Game {
      * create all necessary objects
      */
     public Main() {
-        super(1920, 1080);
+        super(1208, 720);
         //this.sicherheitsFrage("Schorschies Adventure");
         //this.nachrichtSchicken("Starting");
         //this.mausAnmelden(new Maus(3));

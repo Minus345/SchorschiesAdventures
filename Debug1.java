@@ -7,7 +7,7 @@ import ea.Knoten;
  * @author Max
  * @version 2
  */
-public class L1 extends Level {
+public class Debug1 extends Level {
     private Door door;
     private Knoten tuerRaum;
     private Lava lava;
@@ -20,14 +20,15 @@ public class L1 extends Level {
     private Knoten boden;
     private Knoten lavaBoden;
     private Npc1 npc1;
-    public L1() {
+
+    public Debug1() {
         super();
     }
 
     public void generate() {
         Main.setAktiveLevel(this);
-        System.out.println("Lade Level 1");
-        Main.setText("Level 1");
+        System.out.println("Lade Debug 1");
+        Main.setText("Debug 1");
 
         level = new Knoten();
         boden = new Knoten();
@@ -39,7 +40,7 @@ public class L1 extends Level {
         weg = new Floor(0, 400, 800, level);
         boden.add(weg);
 
-        plattform = new Floor(50, 300, 400, level);
+        plattform = new Floor(50, 300, 960, level);
         boden.add(plattform);
 
         lava = new Lava(100, level);
@@ -67,7 +68,7 @@ public class L1 extends Level {
             System.out.println("tür wurde geöffnet - Nextes Level Laden");
             Inv.removeKey("bester Schluessel");
             Main.getFrame().entfernen(level);
-            Level level2 = new L2();
+            Level level2 = new Debug2();
             level2.generate();
         }
         if (Main.getPlayer().schneidet(chest) && level.besitzt(chest)) {
@@ -87,22 +88,10 @@ public class L1 extends Level {
         }
     }
 
-    @Override
-    public void playerIsRight() {
-
-    }
-
-    @Override
-    public void playerIsLeft() {
-
-    }
-
-    @Override
     public Knoten getFloor() {
         return boden;
     }
 
-    @Override
     public Knoten getLava() {
         return lavaBoden;
     }

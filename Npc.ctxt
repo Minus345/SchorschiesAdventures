@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Npc
+comment0.text=\r\n\ Klass\ for\ the\ npc,\ with\ Methods\ for\ setting\ the\ position\ and\ removing\ the\ npc\ with\ it\u00B4s\ hitbox,\ picture\ and\ name\r\n\r\n\ @author\ max\r\n\ @version\ 2\r\n
+comment1.params=x\ y\ length\ height\ room\ path\ name
+comment1.target=Npc(int,\ int,\ int,\ int,\ ea.Knoten,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ creates\ a\ Nec\ with\ a\ hitbox\ (Rechteck)\r\n\r\n\ @param\ x\ \ \ \ \ \ x-Coordinate\ of\ the\ npc\ and\ it\u00B4s\ hitbox\r\n\ @param\ y\ \ \ \ \ \ y-Coordinate\ of\ the\ npc\ and\ it\u00B4s\ hitbox\r\n\ @param\ length\ length\ of\ the\ npc\ and\ it\u00B4s\ hitbox\r\n\ @param\ height\ height\ of\ the\ npc\ and\ it\u00B4s\ hitbox\r\n\ @param\ room\ \ \ the\ room\ where\ they\ will\ be\ placed\ in\r\n\ @param\ path\ \ \ the\ path\ to\ the\ picture\ of\ the\ npc\r\n\ @param\ name\ \ \ the\ display\ name\ of\ the\ npc\r\n
+comment2.params=x\ y
+comment2.target=void\ positionSetzen(float,\ float)
+comment2.text=\r\n\ overrides\ the\ "positionSetzen"\ method\ form\ the\ "Rechteck"\ klass,\ so\ that\ the\ hitbox,\ the\ picture\ and\ the\ text\ are\ moved\r\n\r\n\ @param\ x\ x-Coordinate\r\n\ @param\ y\ y-Coordinate\r\n
+comment3.params=
+comment3.target=void\ remove()
+comment3.text=\r\n\ removes\ the\ hitbox,\ picture\ and\ name\ from\ the\ screen\r\n
+numComments=4

@@ -28,7 +28,7 @@ public class Player extends Rechteck {
         this.room = room;
         picture = new Bild(x, y, length, height, "pictures/axolotl klein.png");
         farbeSetzen("rot");
-        //this.sichtbarSetzen(false);
+        this.sichtbarSetzen(false);
         positionSetzen(0, 0);
         room.add(this);
         room.add(picture);

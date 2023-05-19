@@ -24,12 +24,16 @@ public abstract class Level {
     /**
      * will be called wenn the player is near the right boarder
      */
-    public abstract void playerIsRight();
+    public void playerIsRight(){
+        Main.getPlayer().setPosition(900, Main.getPlayer().getY());
+    }
 
     /**
      * will be called wenn the player is near the left boarder
      */
-    public abstract void playerIsLeft();
+    public  void playerIsLeft(){
+        Main.getPlayer().setPosition(0, Main.getPlayer().getY());
+    }
 
     /**
      * @return returns the "Knoten" floor, where all objekts, from the floor, are stored in

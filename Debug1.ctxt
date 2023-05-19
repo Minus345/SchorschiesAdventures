@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=Debug1
+comment0.text=\r\n\ Level\ 1.\r\n\r\n\ @author\ Max\r\n\ @version\ 2\r\n
+comment1.params=
+comment1.target=Debug1()
+comment2.params=
+comment2.target=void\ generate()
+comment3.params=
+comment3.target=void\ isEPressed()
+comment4.params=
+comment4.target=ea.Knoten\ getFloor()
+comment5.params=
+comment5.target=ea.Knoten\ getLava()
+numComments=6

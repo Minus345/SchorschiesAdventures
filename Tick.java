@@ -42,12 +42,13 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
             }
         }
 
-
-        if (Main.getPlayer().getX() > 750) {
+        //Is Right
+        if (Main.getPlayer().getX() > 900) {
             Main.getAktiveLevel().playerIsRight();
         }
 
-        if (Main.getPlayer().getY() < 0) {
+        //Is Left
+        if (Main.getPlayer().getX() < 0) {
             Main.getAktiveLevel().playerIsLeft();
         }
 

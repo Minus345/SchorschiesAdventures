@@ -1,8 +1,8 @@
 #BlueJ class context
-comment0.target=L1
-comment0.text=\r\n\ Level\ 1.\r\n\r\n\ @author\ Max\r\n\ @version\ 2\r\n
+comment0.target=L0
+comment0.text=\r\n\ Level\ 0\:\ Anfangslevel\r\n\ \r\n\ @author\ \r\n\ @version\ \r\n
 comment1.params=
-comment1.target=L1()
+comment1.target=L0()
 comment2.params=
 comment2.target=void\ generate()
 comment3.params=

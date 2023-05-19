@@ -18,10 +18,7 @@ public class Main extends Game {
      * create all necessary objects
      */
     public Main() {
-        super(1208, 720);
-        //this.sicherheitsFrage("Schorschies Adventure");
-        //this.nachrichtSchicken("Starting");
-        //this.mausAnmelden(new Maus(3));
+        super(960, 720);
         frame = new Knoten();
         wurzel.add(frame);
 
@@ -33,7 +30,7 @@ public class Main extends Game {
 
         Inv.createInv();
 
-        new L1().generate();
+        new L0().generate();
 
         player = new Player(200, 200, 50, 50, frame);
         player.setPosition(0, 0);

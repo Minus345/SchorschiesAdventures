@@ -32,6 +32,7 @@ public abstract class Npc extends Rechteck {
         farbeSetzen("rot");
         this.name = new Text(name, x, y);
         this.name.farbeSetzen("rot");
+        this.sichtbarSetzen(false);
         room.add(this);
         room.add(picture);
         room.add(this.name);

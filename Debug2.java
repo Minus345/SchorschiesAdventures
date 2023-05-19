@@ -6,20 +6,20 @@ import ea.Knoten;
  * @author Max
  * @version 2
  */
-public class L2 extends Level {
+public class Debug2 extends Level {
     private Door door;
     private Floor weg;
     private Knoten level;
     private Knoten boden;
-    public L2() {
+    public Debug2() {
         super();
     }
 
     @Override
     public void generate() {
         Main.setAktiveLevel(this);
-        System.out.println("Lade Level 2");
-        Main.setText("Level 2");
+        System.out.println("Lade Debug 2");
+        Main.setText("Debug 2");
 
         level = new Knoten();
         boden = new Knoten();
@@ -42,7 +42,7 @@ public class L2 extends Level {
         if (Main.getPlayer().schneidet(door)) {
             System.out.println("tür wurde geöffnet - Nextes Level Laden");
             Main.getFrame().entfernen(level);
-            Level level1 = new L1();
+            Level level1 = new Debug1();
             level1.generate();
         }
     }

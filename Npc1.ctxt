@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.target=Npc1
+comment1.params=x\ y\ length\ height\ room
+comment1.target=Npc1(int,\ int,\ int,\ int,\ ea.Knoten)
+numComments=2

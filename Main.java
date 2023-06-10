@@ -30,7 +30,7 @@ public class Main extends Game {
 
         Inv.createInv();
 
-        new L0().generate();
+        new Physikraum().generate();
 
         player = new Player(200, 200, 50, 50, frame);
         player.setPosition(0, 0);

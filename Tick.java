@@ -52,10 +52,10 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
             Main.getAktiveLevel().playerIsLeft();
         }
 
-        if (a) {
+        if (a && !Main.getPlayer().getLeftHitBox().schneidet(Main.getAktiveLevel().getFloor())) { //checks if the player runs into stairs on the ground - left
             Main.getPlayer().setPosition(Main.getPlayer().getX() - 6, Main.getPlayer().getY());
         }
-        if (d) {
+        if (d && !Main.getPlayer().getRightHitBox().schneidet(Main.getAktiveLevel().getFloor())) { //checks if the player runs into stairs on the ground - right
             Main.getPlayer().setPosition(Main.getPlayer().getX() + 6, Main.getPlayer().getY());
         }
     }

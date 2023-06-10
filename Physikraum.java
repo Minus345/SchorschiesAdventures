@@ -36,7 +36,7 @@ public class Physikraum extends Level
         boden = new Knoten();
         lavaBoden = new Knoten();
 
-        Bild background = new Bild(0, 0, 1000, 500, "pictures/physikraum.png");
+        Bild background = new Bild(0, 0, 960, 720, "pictures/physikraum.png");
         level.add(background);
 
         door1 = new Door(880,180 , 100, 100, level);

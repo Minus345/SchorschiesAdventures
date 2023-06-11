@@ -9,11 +9,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="Erste Fixes aber noch mit Fehlern">
+    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="Es wird besser">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kellergang.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kellergang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/Level.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PHNBLinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/PHNBLinks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHNBLinksvonPhy.java" beforeDir="false" afterPath="$PROJECT_DIR$/PHNBLinksvonPhy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHNBLinksvonR.java" beforeDir="false" afterPath="$PROJECT_DIR$/PHNBLinksvonR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHNBLinksvonPhy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHNBLinksvonR.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/PHNBRechts.java" beforeDir="false" afterPath="$PROJECT_DIR$/PHNBRechts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Physikraum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Physikraum.java" afterDir="false" />
     </list>
@@ -277,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686507238435</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Es wird besser">
+      <created>1686508056054</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1686508056054</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -322,7 +331,8 @@
     <MESSAGE value="Kellergang Anfang" />
     <MESSAGE value="Kellergang, Pausenhöfe und Physikraum Verbindungen" />
     <MESSAGE value="Erste Fixes aber noch mit Fehlern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Erste Fixes aber noch mit Fehlern" />
+    <MESSAGE value="Es wird besser" />
+    <option name="LAST_COMMIT_MESSAGE" value="Es wird besser" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

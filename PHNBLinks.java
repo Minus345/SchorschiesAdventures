@@ -18,6 +18,10 @@ public class PHNBLinks extends Level
 
     public void generate()
     {
+
+    }
+    public void generate(int x, int y)
+    {
         Main.setAktiveLevel(this);
         System.out.println("Lade Level ?: Pausenhof Neubau Links");
         Main.setLevelname("Neubau Pausenhof Links");
@@ -34,7 +38,7 @@ public class PHNBLinks extends Level
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();
-        Main.getPlayer().positionSetzen(430, 350);
+        Main.getPlayer().positionSetzen(x, y);
     }
 
     public void isEPressed()
@@ -44,7 +48,8 @@ public class PHNBLinks extends Level
             System.out.println("Tür wurde geöffnet - Nächstes Level Laden");
             Main.getFrame().entfernen(level);
             Level level1 = new Kellergang();
-            level1.generate();
+            level1.generate(910,230);
+            return;
         }
 
         if (Main.getPlayer().schneidet(door2) && level.besitzt(door2))
@@ -53,6 +58,7 @@ public class PHNBLinks extends Level
             Main.getFrame().entfernen(level);
             Level level2 = new Physikraum();
             level2.generate();
+            return;
         }
 
     }

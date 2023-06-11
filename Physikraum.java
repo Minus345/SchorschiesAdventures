@@ -85,8 +85,8 @@ public class Physikraum extends Level
         {
             System.out.println("Tür wurde geöffnet - Nächstes Level Laden");
             Main.getFrame().entfernen(level);
-            Level level1 = new PHNBLinksvonPhy();
-            level1.generate();
+            Level level1 = new PHNBLinks();
+            level1.generate(25,350);
         }
 
         if (Main.getPlayer().schneidet(npc1) && level.besitzt(npc1) && geredet == 0) 

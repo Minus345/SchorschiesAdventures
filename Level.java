@@ -15,6 +15,10 @@ public abstract class Level {
      * generates the level
      */
     public abstract void generate();
+    public void generate(int x, int y)
+    {
+
+    }
 
     /**
      * will be called when the player presses "e"

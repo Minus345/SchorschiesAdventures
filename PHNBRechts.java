@@ -42,8 +42,8 @@ public class PHNBRechts extends Level
     public void playerIsLeft()
     {
         Main.getFrame().entfernen(level);
-        Level level1 = new PHNBLinksvonR();
-        level1.generate();
+        Level level1 = new PHNBLinks();
+        level1.generate(900,350);
     }
 
     @Override

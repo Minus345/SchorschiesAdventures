@@ -3,7 +3,7 @@ import ea.Knoten;
 import ea.Text;
 
 /**
- * @author Max, Mommy
+ * @author Max
  * @version 2
  */
 

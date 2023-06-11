@@ -7,7 +7,8 @@ import ea.Text;
  *
  * @author Fynn
  */
-public class Physikraum extends Level {
+public class Physikraum extends Level 
+{
     private Door door1;
     private Knoten tuerRaum;
     private Floor Stufe1;
@@ -33,11 +34,13 @@ public class Physikraum extends Level {
     private Text story4;
     private int geredet = 0;
 
-    public Physikraum() {
+    public Physikraum() 
+    {
         super();
     }
 
-    public void generate() {
+    public void generate() 
+    {
         Main.setAktiveLevel(this);
         System.out.println("Lade Level ?: Physikraum");
         Main.setLevelname("Physikraum");
@@ -79,14 +82,16 @@ public class Physikraum extends Level {
 
     @Override
     public void isEPressed() {
-        if (Main.getPlayer().schneidet(door1) && level.besitzt(door1)) {
+        if (Main.getPlayer().schneidet(door1) && level.besitzt(door1)) 
+        {
             System.out.println("Tür wurde geöffnet - Nächstes Level Laden");
             Main.getFrame().entfernen(level);
             Level level1 = new L0();
             level1.generate();
         }
 
-        if (Main.getPlayer().schneidet(npc1) && level.besitzt(npc1) && geredet == 0) {
+        if (Main.getPlayer().schneidet(npc1) && level.besitzt(npc1) && geredet == 0) 
+        {
             story1 = new Text("Servus, du brauchst einen Trank um die Lehrer wieder in ihren ", 20, 500);
             story2 = new Text("alten Zustand zurück zu versetzen.", 20, 540);
             story1.farbeSetzen("black");
@@ -97,7 +102,8 @@ public class Physikraum extends Level {
             return;
         }
 
-        if (geredet == 1) {
+        if (geredet == 1) 
+        {
             level.entfernen(story1);
             level.entfernen(story2);
             story3 = new Text("Ich hätte schwören können ich habe ihn irgendwo in diesem Raum gesehen", 20, 500);
@@ -110,48 +116,56 @@ public class Physikraum extends Level {
             return;
         }
 
-        if (geredet == 2) {
+        if (geredet == 2) 
+        {
             level.entfernen(story3);
             level.entfernen(story4);
             geredet = 3;
             return;
         }
 
-        if (Main.getPlayer().schneidet(Schulbank) && level.besitzt(Schulbank)) {
+        if (Main.getPlayer().schneidet(Schulbank) && level.besitzt(Schulbank)) 
+        {
             System.out.println("Du hast die Schulbank durchsucht");
             Inv.setHasPotion(true);
             Inv.updateInv();
             Main.setText("Du hast hier einen Trank gefunden, hoffen wir, dass das der Richtige ist");
         }
 
-        if (Main.getPlayer().schneidet(Schulbank1) && level.besitzt(Schulbank1)) {
+        if (Main.getPlayer().schneidet(Schulbank1) && level.besitzt(Schulbank1)) 
+        {
             System.out.println("Du hast die Schulbank durchsucht");
             Main.setText("Nichts war dort außer ein paar alter Kaugummis");
         }
 
-        if (Main.getPlayer().schneidet(Schulbank2) && level.besitzt(Schulbank2)) {
+        if (Main.getPlayer().schneidet(Schulbank2) && level.besitzt(Schulbank2)) 
+        {
             System.out.println("Du hast die Schulbank durchsucht");
             Main.setText("Ihhh was ist das? Ach eigentlich willst du es garnicht so genau wissen");
         }
 
-        if (Main.getPlayer().schneidet(Schulbank3) && level.besitzt(Schulbank3)) {
+        if (Main.getPlayer().schneidet(Schulbank3) && level.besitzt(Schulbank3)) 
+        {
             System.out.println("Du hast die Schulbank durchsucht");
             Main.setText("Wer hat diese Popel hier unten dran geschmiert? Ekelhaft");
         }
 
-        if (Main.getPlayer().schneidet(Schulbank4) && level.besitzt(Schulbank4)) {
+        if (Main.getPlayer().schneidet(Schulbank4) && level.besitzt(Schulbank4)) 
+        {
             System.out.println("Du hast die Schulbank durchsucht");
             Main.setText("Alles was hier zu finden war ist eine alte Physikschulaufgabe");
         }
     }
 
     @Override
-    public Knoten getFloor() {
+    public Knoten getFloor() 
+    {
         return boden;
     }
 
     @Override
-    public Knoten getLava() {
+    public Knoten getLava() 
+    {
         return lavaBoden;
     }
 }

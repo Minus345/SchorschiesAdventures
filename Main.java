@@ -3,7 +3,7 @@ import ea.Knoten;
 import ea.Text;
 
 /**
- * @author Max
+ * @author Max ich bin der Fynn und ich bin auch dabei....
  * @version 2
  */
 

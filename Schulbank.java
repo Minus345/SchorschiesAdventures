@@ -4,9 +4,8 @@ import ea.Rechteck;
 
 /**
  * @author Fynn
- * @version 2
  */
-public class Schulbank extends Chest {
+public class Schulbank extends Rechteck {
 
     private final Bild picture;
     private final Knoten room;
@@ -20,14 +19,13 @@ public class Schulbank extends Chest {
      * @param height height
      */
     public Schulbank(int x, int y, int length, int height, Knoten room) {
-        super(x,y, length, height, room);
+        super(x, y, length, height);
         this.room = room;
-        picture = new Bild(x, y, length, height, "pictures/kiste.png");
+        picture = new Bild(x, y, length, height, "pictures/Schulbank.png");
         this.sichtbarSetzen(false);
         room.add(this);
         room.add(picture);
     }
-
 
     public void remove() {
         room.entfernen(picture);

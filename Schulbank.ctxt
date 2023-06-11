@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Schulbank
-comment0.text=\r\n\ @author\ Fynn\r\n\ @version\ 2\r\n
+comment0.text=\r\n\ @author\ Fynn\r\n
 comment1.params=x\ y\ length\ height\ room
 comment1.target=Schulbank(int,\ int,\ int,\ int,\ ea.Knoten)
 comment1.text=\r\n\ creates\ a\ chest\ and\ it\u00C2\u00B4s\ hitbox\r\n\r\n\ @param\ x\ \ \ \ \ \ x-Coordinate\r\n\ @param\ y\ \ \ \ \ \ y-Coordinate\r\n\ @param\ length\ length\r\n\ @param\ height\ height\r\n

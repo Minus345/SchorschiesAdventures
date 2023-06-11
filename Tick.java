@@ -86,7 +86,7 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
             case 22:
                 //System.out.println("W");
                 if (allowJumpFormGround()) {
-                    System.out.println("jump");
+                    //System.out.println("jump");
                     Main.getPlayer().setPosition(Main.getPlayer().getX(), Main.getPlayer().getY() - 2);
                     continueJumping = true;
                 }

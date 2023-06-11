@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Rieger
+comment0.text=\r\n\ @author\ Fynn\r\n
+comment1.params=x\ y\ length\ height\ room
+comment1.target=Rieger(int,\ int,\ int,\ int,\ ea.Knoten)
+numComments=2

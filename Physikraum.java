@@ -1,11 +1,13 @@
 import ea.Bild;
 import ea.Knoten;
+import ea.Text;
 
 /**
  * Physikraum
+ *
+ * @author Fynn
  */
-public class Physikraum extends Level
-{
+public class Physikraum extends Level {
     private Door door1;
     private Knoten tuerRaum;
     private Floor Stufe1;
@@ -16,18 +18,28 @@ public class Physikraum extends Level
     private Floor Stufe6;
     private Floor Stufe7;
     private Schulbank Schulbank;
+    private Schulbank Schulbank1;
+    private Schulbank Schulbank2;
+    private Schulbank Schulbank3;
+    private Schulbank Schulbank4;
     private Potion potion;
     private Knoten level;
     private Knoten boden;
     private Knoten lavaBoden;
+    private Rieger npc1;
+    private Rieger npc2;
+    private Text story1;
+    private Text story2;
+    private Text story3;
+    private Text story4;
 
-    public Physikraum()
-    {
+    private boolean isSpeaking = false;
+
+    public Physikraum() {
         super();
     }
 
-    public void generate()
-    {
+    public void generate() {
         Main.setAktiveLevel(this);
         System.out.println("Lade Level ?: Physikraum");
         Main.setText("Physikraum");
@@ -39,7 +51,9 @@ public class Physikraum extends Level
         Bild background = new Bild(0, 0, 960, 720, "pictures/physikraum.png");
         level.add(background);
 
-        door1 = new Door(880,180 , 100, 100, level);
+        npc1 = new Rieger(1, 188, 140, 215, level);
+
+        door1 = new Door(880, 180, 100, 100, level);
         Stufe1 = new Floor(0, 400, 3000, level);
         Stufe2 = new Floor(150, 380, 3000, level);
         Stufe3 = new Floor(300, 360, 3000, level);
@@ -54,42 +68,85 @@ public class Physikraum extends Level
         boden.add(Stufe5);
         boden.add(Stufe6);
         boden.add(Stufe7);
-        Schulbank = new Schulbank(450, 240, 100, 100, level);
-        Main.getPlayer().positionSetzen(200, 200);
+        Schulbank = new Schulbank(450, 220, 120, 120, level);
+        Schulbank1 = new Schulbank(300, 240, 120, 120, level);
+        Schulbank2 = new Schulbank(600, 200, 120, 120, level);
+        Schulbank3 = new Schulbank(750, 180, 120, 120, level);
+        Schulbank4 = new Schulbank(150, 260, 120, 120, level);
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();
+        Main.getPlayer().positionSetzen(880, 180);
     }
 
     @Override
-    public void isEPressed()
-    {
-        if (Main.getPlayer().schneidet(door1) && level.besitzt(door1))
-        {
+    public void isEPressed() {
+        if (Main.getPlayer().schneidet(door1) && level.besitzt(door1)) {
             System.out.println("Tür wurde geöffnet - Nächstes Level Laden");
             Main.getFrame().entfernen(level);
             Level level1 = new L0();
             level1.generate();
         }
 
-        if (Main.getPlayer().schneidet(Schulbank) && level.besitzt(Schulbank))
-        {
+        if (Main.getPlayer().schneidet(npc1) && level.besitzt(npc1) && !isSpeaking) {
+            isSpeaking = true;
+            story1 = new Text("Servus, du brauchst einen Trank um die Lehrer wieder in ihren ", 20, 500);
+            story2 = new Text("alten Zustand zurück zu versetzen.", 20, 540);
+            this.story1.farbeSetzen("black");
+            this.story2.farbeSetzen("black");
+            level.add(this.story1);
+            level.add(this.story2);
+            //level.entfernen(npc1);
+            return;
+        }
+        if (isSpeaking) {
+            isSpeaking = false;
+            level.entfernen(story1);
+            level.entfernen(story2);
+            story3 = new Text("Ich hätte schwören können ich habe ihn irgendwo in diesem Raum gesehen", 20, 500);
+            story4 = new Text("Vielleicht durchsuchst du mal die Schulbänke, viel Erfolg", 20, 540);
+            this.story3.farbeSetzen("black");
+            this.story4.farbeSetzen("black");
+            level.add(this.story3);
+            level.add(this.story4);
+            return;
+        }
+
+        if (Main.getPlayer().schneidet(Schulbank) && level.besitzt(Schulbank)) {
             System.out.println("Du hast die Schulbank durchsucht");
             Inv.setHasPotion(true);
             Inv.updateInv();
-            System.out.println("Du hast hier einen Trank gefunden, was der wohl macht?");
+            System.out.println("Du hast hier einen Trank gefunden, hoffen wir, dass das der richtige ist");
+        }
+
+        if (Main.getPlayer().schneidet(Schulbank1) && level.besitzt(Schulbank1)) {
+            System.out.println("Du hast die Schulbank durchsucht");
+            System.out.println("Nichts war dort außer ein paar alter Kaugummis");
+        }
+
+        if (Main.getPlayer().schneidet(Schulbank2) && level.besitzt(Schulbank2)) {
+            System.out.println("Du hast die Schulbank durchsucht");
+            System.out.println("Ihhh was ist das? Ach eigentlich willst du es garnicht so genau wissen");
+        }
+
+        if (Main.getPlayer().schneidet(Schulbank3) && level.besitzt(Schulbank3)) {
+            System.out.println("Du hast die Schulbank durchsucht");
+            System.out.println("Wer hat diese Popel hier unten dran geschmiert? Ekelhaft");
+        }
+
+        if (Main.getPlayer().schneidet(Schulbank4) && level.besitzt(Schulbank4)) {
+            System.out.println("Du hast die Schulbank durchsucht");
+            System.out.println("Alles was hier zu finden war ist eine alte Physikschulaufgabe");
         }
     }
 
     @Override
-    public Knoten getFloor()
-    {
+    public Knoten getFloor() {
         return boden;
     }
 
     @Override
-    public Knoten getLava()
-    {
+    public Knoten getLava() {
         return lavaBoden;
     }
 }

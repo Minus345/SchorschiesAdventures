@@ -23,11 +23,11 @@ public class Main extends Game {
         wurzel.add(frame);
 
         subtitles = new Text("Text", 0, 450);
+        subtitles.setzeFarbe("black");
         wurzel.add(subtitles);
 
         Text debugText = new Text("Debug V2", 0, 0);
         wurzel.add(debugText);
-
         Inv.createInv();
 
         player = new Player(200, 200, 50, 50, frame);
@@ -67,6 +67,13 @@ public class Main extends Game {
      */
     public static void setText(String text) {
         subtitles.setzeInhalt(text);
+    }
+
+    /**
+     * @param colour the colour for the subtitles for the story
+     */
+    public static void setTextColour(String colour) {
+        subtitles.setzeFarbe(colour);
     }
 
     @Override

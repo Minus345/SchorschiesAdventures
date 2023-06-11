@@ -45,7 +45,7 @@ public class PHNBLinks extends Level
     {
         if (Main.getPlayer().schneidet(door1) && level.besitzt(door1))
         {
-            System.out.println("Tür wurde geöffnet - Nächstes Level Laden");
+            System.out.println("Tür wurde geöffnet - Lade Kellergang");
             Main.getFrame().entfernen(level);
             Level level1 = new Kellergang();
             level1.generate(910,230);
@@ -54,7 +54,7 @@ public class PHNBLinks extends Level
 
         if (Main.getPlayer().schneidet(door2) && level.besitzt(door2))
         {
-            System.out.println("Tür wurde geöffnet - Nächstes Level Laden");
+            System.out.println("Tür wurde geöffnet - Lade Physikraum");
             Main.getFrame().entfernen(level);
             Level level2 = new Physikraum();
             level2.generate();

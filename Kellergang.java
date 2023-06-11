@@ -46,7 +46,7 @@ public class Kellergang extends Level
     {
         if (Main.getPlayer().schneidet(door1) && level.besitzt(door1))
         {
-            System.out.println("Tür wurde geöffnet - Nächstes Level Laden");
+            System.out.println("Tür wurde geöffnet - Lade Pausenhof Links");
             Main.getFrame().entfernen(level);
             Level level1 = new PHNBLinks();
             level1.generate(430,350);

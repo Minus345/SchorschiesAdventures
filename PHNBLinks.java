@@ -34,7 +34,7 @@ public class PHNBLinks extends Level
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();
-        Main.getPlayer().positionSetzen(430, 300);
+        Main.getPlayer().positionSetzen(430, 350);
     }
 
     public void isEPressed()

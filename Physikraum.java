@@ -76,7 +76,7 @@ public class Physikraum extends Level
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();
-        Main.getPlayer().positionSetzen(880, 180);
+        Main.getPlayer().positionSetzen(910, 230);
     }
 
     @Override

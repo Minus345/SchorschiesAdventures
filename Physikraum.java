@@ -85,7 +85,7 @@ public class Physikraum extends Level
         {
             System.out.println("Tür wurde geöffnet - Nächstes Level Laden");
             Main.getFrame().entfernen(level);
-            Level level1 = new PHNBLinks();
+            Level level1 = new PHNBLinksvonPhy();
             level1.generate();
         }
 

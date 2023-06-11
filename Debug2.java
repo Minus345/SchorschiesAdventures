@@ -40,7 +40,7 @@ public class Debug2 extends Level {
 
     public void isEPressed() {
         if (Main.getPlayer().schneidet(door)) {
-            System.out.println("tür wurde geöffnet - Nextes Level Laden");
+            System.out.println("tür wurde geöffnet - Nächstes Level Laden");
             Main.getFrame().entfernen(level);
             Level level1 = new Debug1();
             level1.generate();

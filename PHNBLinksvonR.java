@@ -2,7 +2,7 @@ import ea.Bild;
 import ea.Knoten;
 import ea.Text;
 
-public class PHNBLinks extends Level
+public class PHNBLinksvonR extends Level
 {
     private Knoten level;
     private Knoten boden;
@@ -11,7 +11,7 @@ public class PHNBLinks extends Level
     private Door door1;
     private Door door2;
 
-    public PHNBLinks()
+    public PHNBLinksvonR()
     {
         super();
     }
@@ -34,7 +34,7 @@ public class PHNBLinks extends Level
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();
-        Main.getPlayer().positionSetzen(430, 300);
+        Main.getPlayer().positionSetzen(955, 300);
     }
 
     public void isEPressed()
@@ -76,5 +76,3 @@ public class PHNBLinks extends Level
         return lavaBoden;
     }
 }
-
-

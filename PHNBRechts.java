@@ -2,7 +2,7 @@ import ea.Bild;
 import ea.Knoten;
 import ea.Text;
 
-public class PHNBRechts
+public class PHNBRechts extends Level
 {
     private Knoten level;
     private Knoten boden;
@@ -31,17 +31,19 @@ public class PHNBRechts
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();
-        Main.getPlayer().positionSetzen(0, 300);
+        Main.getPlayer().positionSetzen(5, 300);
     }
 
     public void isEPressed()
     {
-        if(public void playerIsLeft() )
-        {
-            Main.getFrame().entfernen(level);
-            Level level1 = new PHNBLinks();
-            level1.generate();
-        }
+
+    }
+
+    public void playerIsLeft()
+    {
+        Main.getFrame().entfernen(level);
+        Level level1 = new PHNBLinksvonR();
+        level1.generate();
     }
 
     @Override
@@ -57,5 +59,3 @@ public class PHNBRechts
     }
 }
 
-}
-}

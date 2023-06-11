@@ -36,7 +36,7 @@ public class Main extends Game {
         player = new Player(200, 200, 50, 50, frame);
         player.setPosition(0, 0);
 
-        new Physikraum().generate();
+        new Kellergang().generate();
 
         Tick tick = new Tick();
         manager.anmelden(tick, 50);

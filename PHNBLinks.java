@@ -67,7 +67,7 @@ public class PHNBLinks extends Level
     {
         Main.getFrame().entfernen(level);
         Level level3 = new PHNBRechts();
-        level3.generate();
+        level3.generate(1, (int) Main.getPlayer().getY());
     }
 
     @Override

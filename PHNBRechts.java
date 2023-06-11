@@ -17,6 +17,10 @@ public class PHNBRechts extends Level
 
     public void generate()
     {
+
+    }
+    public void generate(int x, int y)
+    {
         Main.setAktiveLevel(this);
         System.out.println("Lade Level ?: Pausenhof Neubau Rechts");
         Main.setLevelname("Neubau Pausenhof Rechts");
@@ -31,7 +35,7 @@ public class PHNBRechts extends Level
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();
-        Main.getPlayer().positionSetzen(1, 350);
+        Main.getPlayer().positionSetzen(x, y);
     }
 
     public void isEPressed()
@@ -43,7 +47,7 @@ public class PHNBRechts extends Level
     {
         Main.getFrame().entfernen(level);
         Level level1 = new PHNBLinks();
-        level1.generate(900,350);
+        level1.generate(900, (int) Main.getPlayer().getY());
     }
 
     @Override

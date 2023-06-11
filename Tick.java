@@ -34,10 +34,8 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
                 jumpCounter = 0;
                 continueJumping = false;
             }
-            if (jumpCounter < 20) { //höhe vom Sprung in Zeit
-                double x;
-                x = (double) jumpCounter / 1.5;
-                Main.getPlayer().setPosition(Main.getPlayer().getX(), (float) (Main.getPlayer().getY() - x));
+            if (jumpCounter < 13) { //höhe vom Sprung in Zeit
+                Main.getPlayer().setPosition(Main.getPlayer().getX(), (float) (Main.getPlayer().getY() - 8));
                 //System.out.println(jumpCounter + "  " + x);
             } else {
                 jumpCounter = 0;

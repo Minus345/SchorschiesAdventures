@@ -9,9 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="fixes">
+    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="Erste Fixes aber noch mit Fehlern">
+      <change afterPath="$PROJECT_DIR$/pictures/hintergrund/steinwand.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kellergang.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kellergang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHNBLinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/PHNBLinks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHNBRechts.java" beforeDir="false" afterPath="$PROJECT_DIR$/PHNBRechts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tick.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-alpha.log" beforeDir="false" afterPath="$PROJECT_DIR$/engine-alpha.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,14 +278,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686507238435</updated>
     </task>
-    <task id="LOCAL-00023" summary="fixes">
-      <created>1686511610356</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1686511610356</updated>
-    </task>
-    <option name="localTasksCounter" value="24" />
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -317,6 +315,7 @@
     <MESSAGE value="bugfixes" />
     <MESSAGE value="add Physikraum.java and player movement correction" />
     <MESSAGE value="fix background picture size" />
+    <MESSAGE value="fixes" />
     <MESSAGE value="Physikraum.java update" />
     <MESSAGE value="Physikraum.java update 2" />
     <MESSAGE value="test" />
@@ -324,40 +323,10 @@
     <MESSAGE value="Kellergang Anfang" />
     <MESSAGE value="Kellergang, Pausenhöfe und Physikraum Verbindungen" />
     <MESSAGE value="Erste Fixes aber noch mit Fehlern" />
-    <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/PHNBLinks.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/PHNBLinks.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/PHNBLinks.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/PHNBLinks.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="Erste Fixes aber noch mit Fehlern" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Schorschies_Adventures___V2$Game.ic" NAME="Game Coverage Results" MODIFIED="1686515748585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

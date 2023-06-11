@@ -1,6 +1,4 @@
-import ea.Bild;
 import ea.Knoten;
-import ea.Text;
 
 /**
  * Kellergang
@@ -8,8 +6,7 @@ import ea.Text;
  * @author Fynn
  */
 
-public class Kellergang extends Level
-{
+public class Kellergang extends Level {
     private Knoten level;
     private Knoten boden;
     private Knoten lavaBoden;
@@ -17,13 +14,17 @@ public class Kellergang extends Level
     private Door door1;
 
 
-    public Kellergang()
-    {
+    public Kellergang() {
         super();
     }
 
-    public void generate()
-    {
+    @Override
+    public void generate() {
+
+    }
+
+    @Override
+    public void generate(int x, int y) {
         Main.setAktiveLevel(this);
         System.out.println("Lade Level ?: Kellergang");
         Main.setLevelname("Kellergang");
@@ -39,29 +40,25 @@ public class Kellergang extends Level
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();
-        Main.getPlayer().positionSetzen(0, 300);
+        Main.getPlayer().positionSetzen(x, y);
     }
 
-    public void isEPressed()
-    {
-        if (Main.getPlayer().schneidet(door1) && level.besitzt(door1))
-        {
+    public void isEPressed() {
+        if (Main.getPlayer().schneidet(door1) && level.besitzt(door1)) {
             System.out.println("Tür wurde geöffnet - Lade Pausenhof Links");
             Main.getFrame().entfernen(level);
             Level level1 = new PHNBLinks();
-            level1.generate(430,350);
+            level1.generate(430, 350);
         }
     }
 
     @Override
-    public Knoten getFloor()
-    {
+    public Knoten getFloor() {
         return boden;
     }
 
     @Override
-    public Knoten getLava()
-    {
+    public Knoten getLava() {
         return lavaBoden;
     }
 }

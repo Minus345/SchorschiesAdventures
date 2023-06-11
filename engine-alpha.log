@@ -1,1 +1,1 @@
-[Sat Jun 10 21:42:26 CEST 2023][ERROR] Das Bild konnte nicht geladen werden: pictures/Schulbank.png (ImageLoader.java:51)
+[Sun Jun 11 21:24:44 CEST 2023][ERROR] Kritischer Fehler im Ticker: Eine Ausnahme wurde nicht abgefangen. Der Ticker wurde angehalten. Die folgende StackTrace sollte dir weitere Informationen liefern. (Manager.java:199)

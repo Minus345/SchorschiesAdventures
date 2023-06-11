@@ -9,9 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="hilfe">
+    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="Erste Fixes aber noch mit Fehlern">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kellergang.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kellergang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHNBLinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/PHNBLinks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-alpha.log" beforeDir="false" afterPath="$PROJECT_DIR$/engine-alpha.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +84,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.30689654&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -273,21 +275,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686507238435</updated>
     </task>
-    <task id="LOCAL-00023" summary="Es wird besser">
-      <created>1686508056054</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1686508056054</updated>
-    </task>
-    <task id="LOCAL-00024" summary="hilfe">
-      <created>1686510644249</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1686510644249</updated>
-    </task>
-    <option name="localTasksCounter" value="25" />
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -332,9 +320,38 @@
     <MESSAGE value="Kellergang Anfang" />
     <MESSAGE value="Kellergang, Pausenhöfe und Physikraum Verbindungen" />
     <MESSAGE value="Erste Fixes aber noch mit Fehlern" />
-    <MESSAGE value="Es wird besser" />
-    <MESSAGE value="hilfe" />
-    <option name="LAST_COMMIT_MESSAGE" value="hilfe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Erste Fixes aber noch mit Fehlern" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Kellergang.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PHNBLinks.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PHNBLinks.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PHNBLinks.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PHNBLinks.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

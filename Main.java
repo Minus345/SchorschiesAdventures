@@ -36,12 +36,12 @@ public class Main extends Game {
         player = new Player(200, 200, 50, 50, frame);
         player.setPosition(0, 0);
 
-        new Kellergang().generate();
-
         Tick tick = new Tick();
         manager.anmelden(tick, 50);
         tastenReagierbarAnmelden(tick);
         tastenLosgelassenReagierbarAnmelden(tick);
+
+        new Kellergang().generate(400,300);
 
     }
 

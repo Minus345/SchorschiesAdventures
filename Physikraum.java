@@ -84,7 +84,7 @@ public class Physikraum extends Level
     {
         if (Main.getPlayer().schneidet(door1) && level.besitzt(door1))
         {
-            System.out.println("Tür wurde geöffnet - Nächstes Level Laden");
+            System.out.println("Tür wurde geöffnet - Nächstes Level Laden. Max ist cool");
             Main.getFrame().entfernen(level);
             Level level1 = new L0();
             level1.generate();

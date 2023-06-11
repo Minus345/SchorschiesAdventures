@@ -18,7 +18,7 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
     public void tick() {
         //wenn nichts unter dir ist dann nach unten fallen (nicht springen)
         if (!Main.getPlayer().schneidet(Main.getAktiveLevel().getFloor()) && !continueJumping) {
-            Main.getPlayer().setPosition(Main.getPlayer().getX(), Main.getPlayer().getY() + 8);
+            Main.getPlayer().setPosition(Main.getPlayer().getX(), (float) (Main.getPlayer().getY() + 8));
         }
 
         if (Main.getAktiveLevel().getLava() != null && Main.getPlayer().schneidet(Main.getAktiveLevel().getLava())) { //berührung mit Lava
@@ -35,7 +35,10 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
                 continueJumping = false;
             }
             if (jumpCounter < 20) { //höhe vom Sprung in Zeit
-                Main.getPlayer().setPosition(Main.getPlayer().getX(), Main.getPlayer().getY() - 8);
+                double x;
+                x = (double) jumpCounter / 1.5;
+                Main.getPlayer().setPosition(Main.getPlayer().getX(), (float) (Main.getPlayer().getY() - x));
+                //System.out.println(jumpCounter + "  " + x);
             } else {
                 jumpCounter = 0;
                 continueJumping = false;

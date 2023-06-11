@@ -1,7 +1,7 @@
 import ea.Knoten;
 
 /**
- * Beschreiben Sie hier die Klasse Level.
+ * The Superclass level
  *
  * @author Max
  * @version 1.0

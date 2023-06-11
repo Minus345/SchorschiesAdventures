@@ -9,7 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="test" />
+    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="fixup! Geschweifte Klammern fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/Level.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +39,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$PROJECT_DIR$/lib/engine-alpha.jar!/ea/Bild.class" root0="SKIP_INSPECTION" />
@@ -219,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686494813202</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="new">
+      <created>1686495174474</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1686495174474</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,7 +238,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/V2" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -248,7 +271,8 @@
     <MESSAGE value="Physikraum.java update" />
     <MESSAGE value="Physikraum.java update 2" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="new" />
+    <option name="LAST_COMMIT_MESSAGE" value="new" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

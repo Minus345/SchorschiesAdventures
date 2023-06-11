@@ -9,35 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="new">
-      <change afterPath="$PROJECT_DIR$/pictures/animation/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/animation/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/animation/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/animation/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/animation/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/animation/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/animation/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/hintergrund/H0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/hintergrund/H1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/hintergrund/H3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/hintergrund/H4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/hintergrund/Keller.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/lehrer/Lehrer1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/lehrer/Lehrer2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/lehrer/Lehrer3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/tuer/T1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/tuer/T2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/tuer/T3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/tuer/T4.png" afterDir="false" />
+    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Kellergang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2023_21_38__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2023_21_38__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Debug1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/Door.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/Level.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Physikraum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Physikraum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rieger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rieger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/RichardMiegel.png" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/lehrer/RichardMiegel.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/hintergrund.png" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/hintergrund/hintergrund.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/physikraum.png" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/hintergrund/physikraum.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/tuer.png" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/tuer/tuer.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +42,19 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="caabf9dd-f5da-4d0a-ad30-ecae3707ec9c" />
+        <option name="url" value="https://github.com/Minus345/SchorschiesAdventures" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Level.java" root0="FORCE_HIGHLIGHTING" />
@@ -75,7 +64,8 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2PNNTjpu3w9mu3aMkjmO2PfIXyl" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">

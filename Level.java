@@ -17,7 +17,7 @@ public abstract class Level {
     public abstract void generate();
 
     /**
-     * will be called wenn the player press "e"
+     * will be called when the player presses "e"
      */
     public abstract void isEPressed();
 

@@ -10,7 +10,6 @@ import ea.Text;
 public class Physikraum extends Level 
 {
     private Door door1;
-    private Knoten tuerRaum;
     private Floor Stufe1;
     private Floor Stufe2;
     private Floor Stufe3;

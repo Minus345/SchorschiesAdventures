@@ -22,7 +22,7 @@ public class Door extends Rechteck {
     public Door(int x, int y, int length, int height, Knoten room) {
         super(x, y, length, height);
         this.room = room;
-        picture = new Bild(x, y, length, height, "pictures/tuer.png");
+        picture = new Bild(x, y, length, height, "pictures/tuer/tuer.png");
         this.sichtbarSetzen(false);
         room.add(this);
         room.add(picture);

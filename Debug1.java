@@ -34,7 +34,7 @@ public class Debug1 extends Level {
         boden = new Knoten();
         lavaBoden = new Knoten();
 
-        Bild background = new Bild(0, 0, 1000, 500, "pictures/hintergrund.png");
+        Bild background = new Bild(0, 0, 1000, 500, "pictures/hintergrund/hintergrund.png");
         level.add(background);
 
         weg = new Floor(0, 400, 800, level);

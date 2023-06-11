@@ -49,7 +49,7 @@ public class Physikraum extends Level
         boden = new Knoten();
         lavaBoden = new Knoten();
 
-        Bild background = new Bild(0, 0, 960, 720, "pictures/physikraum.png");
+        Bild background = new Bild(0, 0, 960, 720, "pictures/hintergrund/physikraum.png");
         level.add(background);
 
         npc1 = new Rieger(1, 188, 140, 215, level);

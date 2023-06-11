@@ -9,9 +9,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="fixup! Geschweifte Klammern fix">
+    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="new">
+      <change afterPath="$PROJECT_DIR$/pictures/animation/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/animation/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/animation/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/animation/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/animation/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/animation/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/animation/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/hintergrund/H0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/hintergrund/H1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/hintergrund/H3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/hintergrund/H4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/hintergrund/Keller.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/lehrer/Lehrer1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/lehrer/Lehrer2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/lehrer/Lehrer3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/tuer/T1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/tuer/T2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/tuer/T3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/tuer/T4.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Debug1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/Door.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Physikraum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Physikraum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rieger.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rieger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/RichardMiegel.png" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/lehrer/RichardMiegel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/hintergrund.png" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/hintergrund/hintergrund.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/physikraum.png" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/hintergrund/physikraum.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pictures/tuer.png" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/tuer/tuer.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +68,7 @@
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Level.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="jar://$PROJECT_DIR$/lib/engine-alpha.jar!/ea/Bild.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -77,10 +104,11 @@
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\lehrer" />
+      <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\hintergrund" />
+      <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\tuer" />
+      <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\animation" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures" />
-      <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2" />
-      <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\com\game" />
-      <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\Level" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -230,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686495174474</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="new">
+      <created>1686495881676</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1686495881676</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

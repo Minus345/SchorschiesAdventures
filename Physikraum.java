@@ -39,7 +39,7 @@ public class Physikraum extends Level {
 
     public void generate() {
         Main.setAktiveLevel(this);
-        System.out.println("Lade Level ?: Physikraum - hallo");
+        System.out.println("Lade Level ?: Physikraum");
         Main.setLevelname("Physikraum");
 
         level = new Knoten();

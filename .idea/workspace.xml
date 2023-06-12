@@ -9,14 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="Erste Fixes aber noch mit Fehlern">
-      <change afterPath="$PROJECT_DIR$/pictures/hintergrund/steinwand.png" afterDir="false" />
+    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="new jump animation">
+      <change afterPath="$PROJECT_DIR$/L1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Npc2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kellergang.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kellergang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHNBLinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/PHNBLinks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHNBRechts.java" beforeDir="false" afterPath="$PROJECT_DIR$/PHNBRechts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tick.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-alpha.log" beforeDir="false" afterPath="$PROJECT_DIR$/engine-alpha.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,22 +76,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;V2&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/max/Documents/Info Ref/Schorschies Adventures - V2/lib/engine-alpha.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.30689654&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "V2",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "C:/Users/max/Documents/Info Ref/Schorschies Adventures - V2",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.30689654",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2" />
@@ -278,7 +280,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686507238435</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="fixes">
+      <created>1686511610356</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1686511610356</updated>
+    </task>
+    <task id="LOCAL-00024" summary="new jump animation">
+      <created>1686518385695</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1686518385695</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -315,7 +331,6 @@
     <MESSAGE value="bugfixes" />
     <MESSAGE value="add Physikraum.java and player movement correction" />
     <MESSAGE value="fix background picture size" />
-    <MESSAGE value="fixes" />
     <MESSAGE value="Physikraum.java update" />
     <MESSAGE value="Physikraum.java update 2" />
     <MESSAGE value="test" />
@@ -323,10 +338,41 @@
     <MESSAGE value="Kellergang Anfang" />
     <MESSAGE value="Kellergang, Pausenhöfe und Physikraum Verbindungen" />
     <MESSAGE value="Erste Fixes aber noch mit Fehlern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Erste Fixes aber noch mit Fehlern" />
+    <MESSAGE value="fixes" />
+    <MESSAGE value="new jump animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="new jump animation" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PHNBLinks.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PHNBLinks.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PHNBLinks.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PHNBLinks.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Schorschies_Adventures___V2$Game.ic" NAME="Game Coverage Results" MODIFIED="1686515748585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

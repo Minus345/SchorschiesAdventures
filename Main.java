@@ -41,7 +41,9 @@ public class Main extends Game {
         tastenReagierbarAnmelden(tick);
         tastenLosgelassenReagierbarAnmelden(tick);
 
-        new Kellergang().generate(400,300);
+        new L1().generate();
+        Main.setTextColour("weiss");
+        //new Kellergang().generate(400,300);
 
     }
 
@@ -68,26 +70,22 @@ public class Main extends Game {
     /**
      * @param text the text for the subtitles for the story
      */
-    public static void setText(String text)
-    {
+    public static void setText(String text) {
         subtitles.setzeInhalt(text);
     }
 
-    public static void setLevelname(String text)
-    {
+    public static void setLevelname(String text) {
         levelName.setzeInhalt(text);
     }
 
     /**
      * @param colour the colour for the subtitles for the story
      */
-    public static void setSubtitleColour(String colour)
-    {
+    public static void setTextColour(String colour) {
         subtitles.setzeFarbe(colour);
     }
 
-    public static void setLevelNameColour(String colour)
-    {
+    public static void setLevelNameColour(String colour) {
         levelName.setzeFarbe(colour);
     }
 

@@ -24,6 +24,6 @@ comment7.text=\r\n\ @param\ text\ the\ text\ for\ the\ subtitles\ for\ the\ stor
 comment8.params=text
 comment8.target=void\ setLevelname(java.lang.String)
 comment9.params=colour
-comment9.target=void\ setSubtitleColour(java.lang.String)
+comment9.target=void\ setTextColour(java.lang.String)
 comment9.text=\r\n\ @param\ colour\ the\ colour\ for\ the\ subtitles\ for\ the\ story\r\n
 numComments=12

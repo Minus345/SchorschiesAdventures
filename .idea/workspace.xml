@@ -9,31 +9,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="Erste Fixes aber noch mit Fehlern">
-      <change afterPath="$PROJECT_DIR$/L1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L1.ctxt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L3.ctxt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L4.ctxt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L5.ctxt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L6.ctxt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L7.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L7.ctxt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2023_21_38__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2023_21_38__Changes_.xml" afterDir="false" />
+    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="fix level 0 -7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Chest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Debug1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Debug2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Door.class" beforeDir="false" afterPath="$PROJECT_DIR$/Door.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Floor.class" beforeDir="false" afterPath="$PROJECT_DIR$/Floor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inv.class" beforeDir="false" afterPath="$PROJECT_DIR$/Inv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Key.class" beforeDir="false" afterPath="$PROJECT_DIR$/Key.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/L0.class" beforeDir="false" afterPath="$PROJECT_DIR$/L0.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/L0.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/L0.ctxt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/L0.java" beforeDir="false" afterPath="$PROJECT_DIR$/L0.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/L1.java" beforeDir="false" afterPath="$PROJECT_DIR$/L1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/L3.java" beforeDir="false" afterPath="$PROJECT_DIR$/L3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/L4.java" beforeDir="false" afterPath="$PROJECT_DIR$/L4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/L5.java" beforeDir="false" afterPath="$PROJECT_DIR$/L5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/L6.java" beforeDir="false" afterPath="$PROJECT_DIR$/L6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/L7.java" beforeDir="false" afterPath="$PROJECT_DIR$/L7.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L1.class" beforeDir="false" afterPath="$PROJECT_DIR$/L1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lava.class" beforeDir="false" afterPath="$PROJECT_DIR$/Lava.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/Level.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Level.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Main.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Npc.class" beforeDir="false" afterPath="$PROJECT_DIR$/Npc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Npc1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Npc1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Physikraum.class" beforeDir="false" afterPath="$PROJECT_DIR$/Physikraum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Potion.class" beforeDir="false" afterPath="$PROJECT_DIR$/Potion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rieger.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rieger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Schulbank.class" beforeDir="false" afterPath="$PROJECT_DIR$/Schulbank.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tick.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tick.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/package.bluej" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -296,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686507238435</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="fix level 0 -7">
+      <created>1686638618377</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1686638618377</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -341,7 +349,8 @@
     <MESSAGE value="Kellergang Anfang" />
     <MESSAGE value="Kellergang, Pausenhöfe und Physikraum Verbindungen" />
     <MESSAGE value="Erste Fixes aber noch mit Fehlern" />
-    <option name="LAST_COMMIT_MESSAGE" value="Erste Fixes aber noch mit Fehlern" />
+    <MESSAGE value="fix level 0 -7" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix level 0 -7" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

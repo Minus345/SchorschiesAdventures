@@ -23,8 +23,14 @@ public class L7 extends Level {
     public L7() {
         super();
     }
+     @Override
+    public void generate()
+    {
+        
+    }
+    @Override
 
-    public void generate() {
+    public void generate(int x, int y) {
         Main.setAktiveLevel(this);
         System.out.println("Lade Level 4: A11");
         Main.setText("Altbau Raum A11");
@@ -42,6 +48,7 @@ public class L7 extends Level {
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();
+        Main.getPlayer().positionSetzen(x, y);
     }
 
     @Override
@@ -51,7 +58,7 @@ public class L7 extends Level {
 
             Main.getFrame().entfernen(level);
             Level level3 = new L3();
-            level3.generate();
+            level3.generate(640,350);
         }
 
     }

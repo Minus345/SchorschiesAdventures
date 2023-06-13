@@ -25,7 +25,13 @@ public class L3 extends Level
         super();
     }
 
-    public void generate() {
+    @Override
+    public void generate()
+    {
+        
+    }
+    @Override
+    public void generate(int x, int y) {
 
         Main.setAktiveLevel(this);
         System.out.println("Lade Level 3: Altbaugang(2)");
@@ -42,6 +48,7 @@ public class L3 extends Level
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();
+        Main.getPlayer().positionSetzen(x, y);
     }
 
     @Override
@@ -53,7 +60,7 @@ public class L3 extends Level
 
             Main.getFrame().entfernen(level);
             Level level6 = new L6();
-            level6.generate();
+            level6.generate(480,350);
         }
         if (Main.getPlayer().schneidet(door2))
         {
@@ -61,7 +68,7 @@ public class L3 extends Level
 
             Main.getFrame().entfernen(level);
             Level level7 = new L7();
-            level7.generate();
+            level7.generate(480,350);
         }
     }
 

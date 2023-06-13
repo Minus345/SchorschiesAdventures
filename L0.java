@@ -3,12 +3,10 @@ import ea.Knoten;
 
 /**
  * Level 0: Anfangslevel
- * 
- * @author 
- * @version 
+ *
+ * @author
  */
-public class L0 extends Level
-{
+public class L0 extends Level {
     private Door door1;
     private Door door2;
     private Knoten tuerRaum;
@@ -23,12 +21,16 @@ public class L0 extends Level
     private Knoten lavaBoden;
 
     // Konstruktor
-    public L0()
-    {
+    public L0() {
         super();
     }
 
+    @Override
     public void generate() {
+    }
+
+    @Override
+    public void generate(int x, int y) {
         Main.setAktiveLevel(this);
         System.out.println("Lade Level 0: Startlevel");
         Main.setText("Kellergewölbe");
@@ -48,37 +50,38 @@ public class L0 extends Level
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();
+        Main.getPlayer().positionSetzen(x, y);
     }
 
     @Override
     public void isEPressed() {
         if (Main.getPlayer().schneidet(door1) && level.besitzt(door1)) {
-            if (Inv.hasKey("Kellerschluessel"))
-            {
+            if (Inv.hasKey("Kellerschluessel")) {
                 System.out.println("Tür wurde geöffnet - Nextes Level Laden");
                 Inv.removeKey("Kellerschluessel");
                 Main.getFrame().entfernen(level);
-                Level level1 = new Debug1();
-                level1.generate();
-            }
-            else
-            {
+                Level level1 = new L1();
+                level1.generate(100, 300);
+            } else {
                 System.out.println("Tür verschlossen.");
             }
         }
         if (Main.getPlayer().schneidet(door2) && level.besitzt(door2)) {
-            if (Inv.hasKey("Kellerschluessel"))
-            {
+            if (Inv.hasKey("Kellerschluessel")) {
                 System.out.println("Das Schloss scheint verbogen... Der Schlüssel passt nicht.");
             }
-            else
-            {
-                System.out.println("Tür verschlossen.");
+
+            if (Inv.hasKey("Schlüssel")) {
+                Main.getFrame().entfernen(level);
+                Level levelnew = new Kellergang();
+                levelnew.generate(1, 350);
+            } else {
+                System.out.println("Tür ist verschlossen");
             }
         }
         if (Main.getPlayer().schneidet(chest) && level.besitzt(chest)) {
             System.out.println("Kiste wurde geöffnet");
-            Inv.addKey(new Key ("Kellerschluessel", 0, 0, 0, 0, level));
+            Inv.addKey(new Key("Kellerschluessel", 0, 0, 0, 0, level));
             System.out.println("Kellerschlüssel gefunden!");
         }
     }

@@ -1,3 +1,4 @@
+import com.sun.prism.paint.Color;
 import ea.Game;
 import ea.Knoten;
 import ea.Text;
@@ -24,11 +25,11 @@ public class Main extends Game {
         wurzel.add(frame);
 
         subtitles = new Text("", 0, 450);
-        subtitles.setzeFarbe("black");
+        subtitles.setzeFarbe("weiss");
         wurzel.add(subtitles);
 
         levelName = new Text("", 0, 0);
-        levelName.setzeFarbe("black");
+        levelName.setzeFarbe("weiss");
         wurzel.add(levelName);
 
         Inv.createInv();
@@ -41,8 +42,7 @@ public class Main extends Game {
         tastenReagierbarAnmelden(tick);
         tastenLosgelassenReagierbarAnmelden(tick);
 
-        new L1().generate();
-        Main.setTextColour("weiss");
+        new L0().generate(100,350);
         //new Kellergang().generate(400,300);
 
     }

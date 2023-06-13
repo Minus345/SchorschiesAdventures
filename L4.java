@@ -15,14 +15,18 @@ public class L4 extends Level {
     private Knoten lavaBoden;
     private Npc2 npc2;
 
-    /**
-     * Konstruktor für Objekte der Klasse L4
-     */
+   
     public L4() {
         super();
     }
+     @Override
+    public void generate()
+    {
+        
+    }
+    @Override
 
-    public void generate() {
+    public void generate(int x,int y) {
         Main.setAktiveLevel(this);
         System.out.println("Lade Level 4: A14(1)");
         Main.setText("Altbau Raum A14");
@@ -41,6 +45,7 @@ public class L4 extends Level {
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();
+        Main.getPlayer().positionSetzen(x, y);
     }
 
     @Override
@@ -50,7 +55,7 @@ public class L4 extends Level {
 
             Main.getFrame().entfernen(level);
             Level level1 = new L1();
-            level1.generate();
+            level1.generate(320,350);
         }
 
     }

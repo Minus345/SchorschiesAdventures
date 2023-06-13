@@ -19,8 +19,13 @@ public class L5 extends Level {
     public L5() {
         super();
     }
-
-    public void generate() {
+ @Override
+    public void generate()
+    {
+        
+    }
+    @Override
+    public void generate(int x,int y) {
         Main.setAktiveLevel(this);
         System.out.println("Lade Level 5: A13");
         Main.setText("Altbau Raum A13");
@@ -39,6 +44,7 @@ public class L5 extends Level {
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();
+        Main.getPlayer().positionSetzen(x, y);
     }
 
     @Override
@@ -48,7 +54,7 @@ public class L5 extends Level {
 
             Main.getFrame().entfernen(level);
             Level level1 = new L1();
-            level1.generate();
+            level1.generate(640,350);
         }
         if (Main.getPlayer().schneidet(chest) && !Inv.hasKey("Schlüssel")) {
             System.out.println("Kiste wurde geöffnet, Schlüssel erhalten");

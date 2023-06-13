@@ -9,15 +9,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="new jump animation">
-      <change afterPath="$PROJECT_DIR$/L1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/L7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Npc2.java" afterDir="false" />
+    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="Erste Fixes aber noch mit Fehlern">
+      <change afterPath="$PROJECT_DIR$/L1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L1.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L3.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L4.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L5.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L6.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/L7.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2023_21_38__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2023_21_38__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L0.class" beforeDir="false" afterPath="$PROJECT_DIR$/L0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L0.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/L0.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L0.java" beforeDir="false" afterPath="$PROJECT_DIR$/L0.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L1.java" beforeDir="false" afterPath="$PROJECT_DIR$/L1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3.java" beforeDir="false" afterPath="$PROJECT_DIR$/L3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L4.java" beforeDir="false" afterPath="$PROJECT_DIR$/L4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L5.java" beforeDir="false" afterPath="$PROJECT_DIR$/L5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L6.java" beforeDir="false" afterPath="$PROJECT_DIR$/L6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L7.java" beforeDir="false" afterPath="$PROJECT_DIR$/L7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,24 +100,25 @@
     "git-widget-placeholder": "V2",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Users/max/Documents/Info Ref/Schorschies Adventures - V2",
+    "last_opened_file_path": "C:/Users/Tina/Documents/Coding/SchorschiesAdventures",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.30689654",
-    "settings.editor.selected.configurable": "preferences.keymap"
+    "settings.editor.selected.configurable": "configurable.group.language"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tina\Documents\Coding\SchorschiesAdventures" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tina\Documents\Coding\SchorschiesAdventures" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\lehrer" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\hintergrund" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\tuer" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\animation" />
-      <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -280,21 +296,7 @@
       <option name="project" value="LOCAL" />
       <updated>1686507238435</updated>
     </task>
-    <task id="LOCAL-00023" summary="fixes">
-      <created>1686511610356</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1686511610356</updated>
-    </task>
-    <task id="LOCAL-00024" summary="new jump animation">
-      <created>1686518385695</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1686518385695</updated>
-    </task>
-    <option name="localTasksCounter" value="25" />
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -331,6 +333,7 @@
     <MESSAGE value="bugfixes" />
     <MESSAGE value="add Physikraum.java and player movement correction" />
     <MESSAGE value="fix background picture size" />
+    <MESSAGE value="fixes" />
     <MESSAGE value="Physikraum.java update" />
     <MESSAGE value="Physikraum.java update 2" />
     <MESSAGE value="test" />
@@ -338,41 +341,10 @@
     <MESSAGE value="Kellergang Anfang" />
     <MESSAGE value="Kellergang, Pausenhöfe und Physikraum Verbindungen" />
     <MESSAGE value="Erste Fixes aber noch mit Fehlern" />
-    <MESSAGE value="fixes" />
-    <MESSAGE value="new jump animation" />
-    <option name="LAST_COMMIT_MESSAGE" value="new jump animation" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/PHNBLinks.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/PHNBLinks.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/PHNBLinks.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/PHNBLinks.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="Erste Fixes aber noch mit Fehlern" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Schorschies_Adventures___V2$Game.ic" NAME="Game Coverage Results" MODIFIED="1686515748585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -9,32 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="fix level 0 -7">
+    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="fix pictures">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Chest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Debug1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Debug2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Door.class" beforeDir="false" afterPath="$PROJECT_DIR$/Door.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Floor.class" beforeDir="false" afterPath="$PROJECT_DIR$/Floor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inv.class" beforeDir="false" afterPath="$PROJECT_DIR$/Inv.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Key.class" beforeDir="false" afterPath="$PROJECT_DIR$/Key.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/L0.class" beforeDir="false" afterPath="$PROJECT_DIR$/L0.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/L0.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/L0.ctxt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/L1.class" beforeDir="false" afterPath="$PROJECT_DIR$/L1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lava.class" beforeDir="false" afterPath="$PROJECT_DIR$/Lava.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/Level.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Level.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Level.ctxt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Main.ctxt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Npc.class" beforeDir="false" afterPath="$PROJECT_DIR$/Npc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Npc1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Npc1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Physikraum.class" beforeDir="false" afterPath="$PROJECT_DIR$/Physikraum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Potion.class" beforeDir="false" afterPath="$PROJECT_DIR$/Potion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rieger.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rieger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schulbank.class" beforeDir="false" afterPath="$PROJECT_DIR$/Schulbank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tick.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tick.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/package.bluej" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +77,7 @@
     "git-widget-placeholder": "V2",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Users/Tina/Documents/Coding/SchorschiesAdventures",
+    "last_opened_file_path": "C:/Users/Tina/Documents/Coding/SchorschiesAdventures/pictures/hintergrund",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.30689654",
@@ -110,6 +86,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tina\Documents\Coding\SchorschiesAdventures\pictures\hintergrund" />
       <recent name="C:\Users\Tina\Documents\Coding\SchorschiesAdventures" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures" />
@@ -304,7 +281,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686638618377</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="fix pictures">
+      <created>1686639500751</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1686639500751</updated>
+    </task>
+    <task id="LOCAL-00025" summary="fix pictures">
+      <created>1686639517745</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1686639517745</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -350,7 +341,8 @@
     <MESSAGE value="Kellergang, Pausenhöfe und Physikraum Verbindungen" />
     <MESSAGE value="Erste Fixes aber noch mit Fehlern" />
     <MESSAGE value="fix level 0 -7" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix level 0 -7" />
+    <MESSAGE value="fix pictures" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix pictures" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

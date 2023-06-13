@@ -93,8 +93,8 @@ public class Physikraum extends Level
         {
             story1 = new Text("Servus, du brauchst einen Trank um die Lehrer wieder in ihren ", 20, 500);
             story2 = new Text("alten Zustand zurück zu versetzen.", 20, 540);
-            story1.farbeSetzen("black");
-            story2.farbeSetzen("black");
+            story1.farbeSetzen("weiss");
+            story2.farbeSetzen("weiss");
             level.add(story1);
             level.add(story2);
             geredet = 1;
@@ -107,8 +107,8 @@ public class Physikraum extends Level
             level.entfernen(story2);
             story3 = new Text("Ich hätte schwören können ich habe ihn irgendwo in diesem Raum gesehen", 20, 500);
             story4 = new Text("Vielleicht durchsuchst du mal die Schulbänke, viel Erfolg!", 20, 540);
-            story3.farbeSetzen("black");
-            story4.farbeSetzen("black");
+            story3.farbeSetzen("weiss");
+            story4.farbeSetzen("weiss");
             level.add(story3);
             level.add(story4);
             geredet = 2;

@@ -1,5 +1,5 @@
 import ea.Knoten;
-
+import ea.Bild;
 /**
  * Beschreiben Sie hier die Klasse L4.
  *
@@ -13,7 +13,7 @@ public class L4 extends Level {
     private Door door;
     private Floor weg;
     private Knoten lavaBoden;
-    private Npc2 npc2;
+    private Loldea npc2;
 
    
     public L4() {
@@ -33,14 +33,16 @@ public class L4 extends Level {
 
         level = new Knoten();
         boden = new Knoten();
-
+        
+        Bild background = new Bild(0, 0, 960, 400, "pictures/hintergrund/H0.png");
+        level.add(background); 
 
         door = new Door(480, 300, 100, 100, level);
 
         weg = new Floor(0, 400, 1280, level);
         boden.add(weg);
 
-        npc2 = new Npc2(80, 300, 100, 100, level);
+        npc2 = new Loldea(100, 180, 200, 250, level);
 
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();

@@ -1,5 +1,5 @@
 import ea.Knoten;
-
+import ea.Bild;
 /**
  * Beschreiben Sie hier die Klasse L4.
  *
@@ -33,7 +33,8 @@ public class L5 extends Level {
         level = new Knoten();
         boden = new Knoten();
 
-
+Bild background = new Bild(0, 0, 960, 400, "pictures/hintergrund/H0.png");
+        level.add(background);
         door = new Door(480, 300, 100, 100, level);
 
         chest = new Chest(100, 335, 100, 100, level);

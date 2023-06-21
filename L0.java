@@ -33,18 +33,19 @@ public class L0 extends Level {
     public void generate(int x, int y) {
         Main.setAktiveLevel(this);
         System.out.println("Lade Level 0: Startlevel");
-        Main.setText("Kellergewölbe");
+        Main.setLevelname("Kellergewölbe");
+        Main.setText("Du hörst Ratten und ein Tropfen");
 
         level = new Knoten();
         boden = new Knoten();
         lavaBoden = new Knoten();
 
-        door1 = new Door(30, 350, 100, 100, level);
-        door2 = new Door(130, 350, 100, 100, level);
+        door1 = new Door(30, 300, 100, 100, level);
+        door2 = new Door(250, 300, 100, 100, level);
 
-        chest = new Chest(250, 340, 100, 100, level);
+        chest = new Chest(550, 340, 100, 100, level);
 
-        weg = new Floor(0, 400, 800, level);
+        weg = new Floor(0, 400, 960, level);
         boden.add(weg);
 
         Main.getFrame().add(level);
@@ -55,45 +56,40 @@ public class L0 extends Level {
 
     @Override
     public void isEPressed() {
-        if (Main.getPlayer().schneidet(door1) && level.besitzt(door1)) {
-            if (Inv.hasKey("Kellerschluessel")) {
-                System.out.println("Tür wurde geöffnet - Nextes Level Laden");
-                Inv.removeKey("Kellerschluessel");
-                Main.getFrame().entfernen(level);
-                Level level1 = new L1();
-                level1.generate(100, 300);
-            } else {
-                System.out.println("Tür verschlossen.");
-            }
-        }
         if (Main.getPlayer().schneidet(door2) && level.besitzt(door2)) {
-            if (Inv.hasKey("Kellerschluessel")) {
-                System.out.println("Das Schloss scheint verbogen... Der Schlüssel passt nicht.");
-            }
-
             if (Inv.hasKey("Schlüssel")) {
                 Main.getFrame().entfernen(level);
                 Level levelnew = new Kellergang();
                 levelnew.generate(1, 350);
+                return;
             } else {
-                System.out.println("Tür ist verschlossen");
+                Main.setText("Tür verschlossen");
+            }
+            if (Inv.hasKey("Kellerschluessel")) {
+                Main.setText("Der Schlüssel passt nicht");
             }
         }
         if (Main.getPlayer().schneidet(chest) && level.besitzt(chest)) {
-            System.out.println("Kiste wurde geöffnet");
-            Inv.addKey(new Key("Kellerschluessel", 0, 0, 0, 0, level));
-            System.out.println("Kellerschlüssel gefunden!");
+            if (!Inv.hasKey("Kellerschlüssel"))
+            {
+                Main.setText("Kiste wurde geöffnet: Kellerschlüssel gefunden!");
+                Inv.addKey(new Key("Kellerschlüssel", 0, 0, 0, 0, level));
+            }
+            else
+            {
+                Main.setText("Du hast diese Kiste bereits geöffnet");
+            }
         }
-    }
-
-    @Override
-    public void playerIsRight() {
-
-    }
-
-    @Override
-    public void playerIsLeft() {
-
+        if (Main.getPlayer().schneidet(door1) && level.besitzt(door1)) {
+            if (Inv.hasKey("Kellerschlüssel")) {
+                System.out.println("Tür wurde geöffnet - Nextes Level Laden");
+                Main.getFrame().entfernen(level);
+                Level level1 = new L1();
+                level1.generate(100, 300);
+            } else {
+                Main.setText("Tür verschlossen");
+            }
+        }
     }
 
     @Override

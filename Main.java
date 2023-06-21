@@ -42,8 +42,8 @@ public class Main extends Game {
         tastenReagierbarAnmelden(tick);
         tastenLosgelassenReagierbarAnmelden(tick);
 
-        new L0().generate(100,350);
-        //new Kellergang().generate(400,300);
+        //new L0().generate(100,350);
+        new L1().generate(400,300);
 
     }
 

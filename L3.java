@@ -77,7 +77,7 @@ public class L3 extends Level
     {
         Main.getFrame().entfernen(level);
         Level level3 = new L1();
-        level3.generate();  
+        level3.generate(900,350);
     }
 
     @Override

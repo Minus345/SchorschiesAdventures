@@ -43,6 +43,7 @@ public class Physikraum extends Level
         Main.setAktiveLevel(this);
         System.out.println("Lade Level ?: Physikraum");
         Main.setLevelname("Physikraum");
+        Main.setText("Viele Schrecken haben hier stattgefunden...");
 
         level = new Knoten();
         boden = new Knoten();

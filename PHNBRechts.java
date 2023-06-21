@@ -31,6 +31,8 @@ public class PHNBRechts extends Level
 
         bod = new Floor(0, 400, 3000, level);
         boden.add(bod);
+        
+        door1 = new Door(830, 300, 100, 100, level);
 
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
@@ -40,7 +42,14 @@ public class PHNBRechts extends Level
 
     public void isEPressed()
     {
-
+        if (Main.getPlayer().schneidet(door1) && level.besitzt(door1))
+        {
+            System.out.println("Tür wurde geöffnet - Lade Lehrergarage");
+            Main.getFrame().entfernen(level);
+            Level level1 = new Lehrergarage();
+            level1.generate(30,350);
+            return;
+        }
     }
 
     public void playerIsLeft()

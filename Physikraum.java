@@ -77,7 +77,7 @@ public class Physikraum extends Level
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();
-        Main.getPlayer().positionSetzen(910, 230);
+        Main.getPlayer().setPosition(910, 230);
     }
 
     @Override
@@ -87,7 +87,7 @@ public class Physikraum extends Level
             System.out.println("Tür wurde geöffnet - Nächstes Level Laden");
             Main.getFrame().entfernen(level);
             Level level1 = new PHNBLinks();
-            level1.generate(25,350);
+            level1.generate(25,300);
         }
 
         if (Main.getPlayer().schneidet(npc1) && level.besitzt(npc1) && geredet == 0) 

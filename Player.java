@@ -11,7 +11,9 @@ import ea.Rechteck;
  */
 public class Player extends Rechteck {
 
-    private final Bild picture;
+    private Bild picture;
+    private Bild[] arrayr;
+    private Bild[] arrayl;
     private final Knoten room;
     private final Rechteck rightHitBox;
     private final Rechteck leftHitBox;
@@ -30,7 +32,23 @@ public class Player extends Rechteck {
     public Player(int x, int y, int length, int height, Knoten room) {
         super(x, y, length, height);
         this.room = room;
-        picture = new Bild(x, y, length, height, "pictures/axolotl klein.png");
+        picture = new Bild(x, y, length, height, "pictures/animation/1r.png");
+        arrayr = new Bild[6];
+        arrayr[0] = new Bild(x, y, length, height, "pictures/animation/1r.png");
+        arrayr[1] = new Bild(x, y, length, height, "pictures/animation/2r.png");
+        arrayr[2] = new Bild(x, y, length, height, "pictures/animation/3r.png");
+        arrayr[3] = new Bild(x, y, length, height, "pictures/animation/4r.png");
+        arrayr[4] = new Bild(x, y, length, height, "pictures/animation/5r.png");
+        arrayr[5] = new Bild(x, y, length, height, "pictures/animation/6r.png");
+        
+        arrayl = new Bild[6];
+        arrayl[0] = new Bild(x, y, length, height, "pictures/animation/1.png");
+        arrayl[1] = new Bild(x, y, length, height, "pictures/animation/2.png");
+        arrayl[2] = new Bild(x, y, length, height, "pictures/animation/3.png");
+        arrayl[3] = new Bild(x, y, length, height, "pictures/animation/4.png");
+        arrayl[4] = new Bild(x, y, length, height, "pictures/animation/5.png");
+        arrayl[5] = new Bild(x, y, length, height, "pictures/animation/6.png");
+        
         farbeSetzen("rot");
         positionSetzen(0, 0);
         room.add(this);
@@ -53,6 +71,26 @@ public class Player extends Rechteck {
     }
 
     /**
+     * sets the picture vor the animation Rechts
+     */
+    public void setPictureRechts(int x) {
+        room.entfernen(picture);
+        this.picture = arrayr[x];
+        picture.positionSetzen(Main.getPlayer().getX(), Main.getPlayer().getY());
+        room.add(picture);
+    }
+    
+    /**
+     * sets the picture vor the animation Rechts
+     */
+    public void setPictureLinks(int x) {
+        room.entfernen(picture);
+        this.picture = arrayl[x];
+        picture.positionSetzen(Main.getPlayer().getX(), Main.getPlayer().getY());
+        room.add(picture);
+    }
+    
+    /**
      * sets the position for the player and the hitbox
      *
      * @param x x-Coordinate
@@ -63,6 +101,7 @@ public class Player extends Rechteck {
         picture.positionSetzen(x, y);
         rightHitBox.positionSetzen(x + (float) length / 2, y + (float) this.hight / 4);
         leftHitBox.positionSetzen(x, y + (float) this.hight / 4);
+        setPictureRechts(0);
     }
 
     /**

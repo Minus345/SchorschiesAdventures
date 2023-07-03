@@ -37,7 +37,7 @@ public class Inv {
         invList = invList + " " + textKeys;
 
         text.setzeInhalt(invList);
-        text.positionSetzen(600, 500);
+        text.positionSetzen(30, 640);
     }
 
     public static boolean isHasPotion() {

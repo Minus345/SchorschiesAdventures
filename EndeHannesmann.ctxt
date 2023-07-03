@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=EndeHannesmann
+comment1.params=
+comment1.target=EndeHannesmann()
+comment2.params=
+comment2.target=void\ generate()
+comment3.params=x\ y
+comment3.target=void\ generate(int,\ int)
+comment4.params=
+comment4.target=void\ isEPressed()
+comment5.params=
+comment5.target=ea.Knoten\ getFloor()
+comment6.params=
+comment6.target=ea.Knoten\ getLava()
+numComments=7

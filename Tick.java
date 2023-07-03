@@ -11,11 +11,16 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
     private boolean a;
     private boolean d;
 
+    private int x = 0;
+    private int y = 0;
+    private int x1 = 0;
+    private int y1 = 0;
 
     /**
      * the method is called every tick
      */
     public void tick() {
+        if(Main.getPlayer() == null) return;
         //wenn nichts unter dir ist dann nach unten fallen (nicht springen)
         if (!Main.getPlayer().schneidet(Main.getAktiveLevel().getFloor()) && !continueJumping) {
             Main.getPlayer().setPosition(Main.getPlayer().getX(), (float) (Main.getPlayer().getY() + 8));
@@ -59,6 +64,73 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
         if (d && !Main.getPlayer().getRightHitBox().schneidet(Main.getAktiveLevel().getFloor())) { //checks if the player runs into stairs on the ground - right
             Main.getPlayer().setPosition(Main.getPlayer().getX() + 6, Main.getPlayer().getY());
         }
+
+        if(d){
+            x++;
+            if(x == 5){
+               // System.out.println("animation");
+                y++;
+                if(y == 5){
+                    y = 0;
+                }
+                x = 0;
+            }
+            switch(y){
+                case 0:
+                    Main.getPlayer().setPictureRechts(0);
+                    break;
+                case 1:    
+                    Main.getPlayer().setPictureRechts(1);
+                    break;
+                case 2:
+                    Main.getPlayer().setPictureRechts(2);
+                    break;
+                case 3:
+                    Main.getPlayer().setPictureRechts(3);
+                    break;
+                case 4:
+                    Main.getPlayer().setPictureRechts(4);
+                    break;
+                case 5:
+                    Main.getPlayer().setPictureRechts(5);
+                    break;
+
+            }
+        }
+
+        if(a){
+            x1++;
+            if(x1 == 5){
+                //System.out.println("animation");
+                y1++;
+                if(y1 == 5){
+                    y1 = 0;
+                }
+                x1 = 0;
+            }
+            switch(y1){
+                case 0:
+                    Main.getPlayer().setPictureLinks(0);
+                    break;
+                case 1:    
+                    Main.getPlayer().setPictureLinks(1);
+                    break;
+                case 2:
+                    Main.getPlayer().setPictureLinks(2);
+                    break;
+                case 3:
+                    Main.getPlayer().setPictureLinks(3);
+                    break;
+                case 4:
+                    Main.getPlayer().setPictureLinks(4);
+                    break;
+                case 5:
+                    Main.getPlayer().setPictureLinks(5);
+                    break;
+
+            }
+        }
+
     }
 
     //are the same methods????

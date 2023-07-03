@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=NPCLoldea
+comment0.text=\r\n\ @author\ \r\n\ @version\ \r\n
+comment1.params=x\ y\ length\ height\ room
+comment1.target=NPCLoldea(int,\ int,\ int,\ int,\ ea.Knoten)
+comment1.text=\r\n\ @author\ Kevin\r\n\ @version\ \r\n
+numComments=2

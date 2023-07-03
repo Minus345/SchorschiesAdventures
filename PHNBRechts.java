@@ -24,6 +24,7 @@ public class PHNBRechts extends Level
         Main.setAktiveLevel(this);
         System.out.println("Lade Level ?: Pausenhof Neubau Rechts");
         Main.setLevelname("Neubau Pausenhof Rechts");
+        Main.setText("");
 
         level = new Knoten();
         boden = new Knoten();
@@ -37,7 +38,7 @@ public class PHNBRechts extends Level
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();
-        Main.getPlayer().positionSetzen(x, y);
+        Main.getPlayer().setPosition(x, y);
     }
 
     public void isEPressed()
@@ -47,7 +48,7 @@ public class PHNBRechts extends Level
             System.out.println("Tür wurde geöffnet - Lade Lehrergarage");
             Main.getFrame().entfernen(level);
             Level level1 = new Lehrergarage();
-            level1.generate(30,350);
+            level1.generate(30,300);
             return;
         }
     }

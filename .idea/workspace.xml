@@ -9,25 +9,106 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="add new Level">
-      <change afterPath="$PROJECT_DIR$/Heidrich.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lehrergarage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Loldea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2023_21_38_[Changes]/engine-alpha.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2023_21_38_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_06_2023_21_38__Changes_.xml" beforeDir="false" />
+    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="merge data from 20.6">
+      <change afterPath="$PROJECT_DIR$/EndeGoldie.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EndeGoldie.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EndeGoldie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EndeHannesmann.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EndeHannesmann.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EndeHannesmann.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EndeLoldea.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EndeLoldea.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EndeLoldea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EndeWaldrich.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EndeWaldrich.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EndeWaldrich.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Heidrich.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Heidrich.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Intro.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Intro.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Intro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lehrergarage.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lehrergarage.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Loldea.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Loldea.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NPCLoldea.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NPCLoldea.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NPCLoldea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Player2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Player2.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Player2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tutorial.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tutorial.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tutorial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/animation/1r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/animation/2r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/animation/3r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/animation/4r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/animation/5r.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pictures/animation/6r.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chest.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Chest.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Chest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Debug1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Debug2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Door.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Door.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Door.java" beforeDir="false" afterPath="$PROJECT_DIR$/Door.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Floor.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Floor.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Floor.java" beforeDir="false" afterPath="$PROJECT_DIR$/Floor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inv.class" beforeDir="false" afterPath="$PROJECT_DIR$/Inv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inv.java" beforeDir="false" afterPath="$PROJECT_DIR$/Inv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kellergang.class" beforeDir="false" afterPath="$PROJECT_DIR$/Kellergang.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kellergang.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Kellergang.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kellergang.java" beforeDir="false" afterPath="$PROJECT_DIR$/Kellergang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Key.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Key.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/Key.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L0.class" beforeDir="false" afterPath="$PROJECT_DIR$/L0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L0.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/L0.ctxt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/L0.java" beforeDir="false" afterPath="$PROJECT_DIR$/L0.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L1.java" beforeDir="false" afterPath="$PROJECT_DIR$/L1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3.class" beforeDir="false" afterPath="$PROJECT_DIR$/L3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/L3.java" beforeDir="false" afterPath="$PROJECT_DIR$/L3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L4.class" beforeDir="false" afterPath="$PROJECT_DIR$/L4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/L4.java" beforeDir="false" afterPath="$PROJECT_DIR$/L4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L5.class" beforeDir="false" afterPath="$PROJECT_DIR$/L5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/L5.java" beforeDir="false" afterPath="$PROJECT_DIR$/L5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L6.class" beforeDir="false" afterPath="$PROJECT_DIR$/L6.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/L6.java" beforeDir="false" afterPath="$PROJECT_DIR$/L6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L7.class" beforeDir="false" afterPath="$PROJECT_DIR$/L7.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/L7.java" beforeDir="false" afterPath="$PROJECT_DIR$/L7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lava.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Lava.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lava.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lehrergarage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lehrergarage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Main.ctxt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Npc.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Npc.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Npc.java" beforeDir="false" afterPath="$PROJECT_DIR$/Npc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Npc1.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Npc1.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Npc1.java" beforeDir="false" afterPath="$PROJECT_DIR$/Npc1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Npc2.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Npc2.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Npc2.java" beforeDir="false" afterPath="$PROJECT_DIR$/Npc2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHNBLinks.class" beforeDir="false" afterPath="$PROJECT_DIR$/PHNBLinks.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PHNBLinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/PHNBLinks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHNBRechts.class" beforeDir="false" afterPath="$PROJECT_DIR$/PHNBRechts.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PHNBRechts.java" beforeDir="false" afterPath="$PROJECT_DIR$/PHNBRechts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Physikraum.class" beforeDir="false" afterPath="$PROJECT_DIR$/Physikraum.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Physikraum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Physikraum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pictures/lehrer/Lehrer3.png" beforeDir="false" afterPath="$PROJECT_DIR$/pictures/lehrer/AnnaWaldrich.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Player.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Potion.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Potion.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Potion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Potion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rieger.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Rieger.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Schorschies Adventures - V2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Schorschies Adventures - V2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Schulbank.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Schulbank.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Schulbank.java" beforeDir="false" afterPath="$PROJECT_DIR$/Schulbank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tick.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tick.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine-alpha.log" beforeDir="false" afterPath="$PROJECT_DIR$/engine-alpha.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/package.bluej" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,24 +175,25 @@
     &quot;git-widget-placeholder&quot;: &quot;V2&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/max/Documents/Info Ref/Schorschies Adventures - V2&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/max/Documents/Info Ref/Schorschies Adventures - V2/pictures/animation&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.30689654&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\animation" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2" />
+      <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\lehrer" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\hintergrund" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\tuer" />
-      <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\animation" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -310,7 +392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686586275307</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="merge data from 20.6">
+      <created>1687375352598</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1687375352598</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -357,7 +446,8 @@
     <MESSAGE value="fixes" />
     <MESSAGE value="new jump animation" />
     <MESSAGE value="add new Level" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new Level" />
+    <MESSAGE value="merge data from 20.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge data from 20.6" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

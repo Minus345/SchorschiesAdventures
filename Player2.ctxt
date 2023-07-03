@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Player2
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Player2.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment1.params=x\ y\ length\ height\ room
+comment1.target=Player2(int,\ int,\ int,\ int,\ ea.Knoten)
+comment1.text=\r\n\ Konstruktor\ f\u00FCr\ Objekte\ der\ Klasse\ Player2\r\n
+comment2.params=x\ y
+comment2.target=void\ setPosition(float,\ float)
+comment3.params=
+comment3.target=void\ add()
+comment3.text=\r\n\ adds\ the\ player\ and\ the\ hitbox\ to\ the\ room\r\n
+comment4.params=
+comment4.target=void\ remove()
+comment4.text=\r\n\ removes\ the\ player\ and\ the\ hitbox\ to\ the\ room\r\n
+comment5.params=
+comment5.target=ea.Rechteck\ getRightHitBox()
+comment6.params=
+comment6.target=ea.Rechteck\ getLeftHitBox()
+numComments=7

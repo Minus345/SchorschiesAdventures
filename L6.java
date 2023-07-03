@@ -48,7 +48,7 @@ public class L6 extends Level
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();
-        Main.getPlayer().positionSetzen(x, y);
+        Main.getPlayer().setPosition(x, y);
     }
 
     @Override
@@ -60,7 +60,7 @@ public class L6 extends Level
             
             Main.getFrame().entfernen(level);
             Level level3 = new L3();
-            level3.generate(320,350);
+            level3.generate(320,300);
         }
       
     }

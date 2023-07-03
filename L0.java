@@ -31,6 +31,7 @@ public class L0 extends Level {
 
     @Override
     public void generate(int x, int y) {
+        Main.setPlayer(new Player(200, 200, 100, 100, Main.getFrame()));
         Main.setAktiveLevel(this);
         System.out.println("Lade Level 0: Startlevel");
         Main.setLevelname("Kellergewölbe");
@@ -51,7 +52,7 @@ public class L0 extends Level {
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();
-        Main.getPlayer().positionSetzen(x, y);
+        Main.getPlayer().setPosition(x, y);
     }
 
     @Override
@@ -60,7 +61,7 @@ public class L0 extends Level {
             if (Inv.hasKey("Schlüssel")) {
                 Main.getFrame().entfernen(level);
                 Level levelnew = new Kellergang();
-                levelnew.generate(1, 350);
+                levelnew.generate(1, 300);
                 return;
             } else {
                 Main.setText("Tür verschlossen");

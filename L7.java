@@ -1,6 +1,7 @@
 
-import ea.Knoten;
 import ea.Bild;
+import ea.Knoten;
+
 /**
  * Beschreiben Sie hier die Klasse L4.
  *
@@ -23,11 +24,12 @@ public class L7 extends Level {
     public L7() {
         super();
     }
-     @Override
-    public void generate()
-    {
-        
+
+    @Override
+    public void generate() {
+
     }
+
     @Override
 
     public void generate(int x, int y) {
@@ -38,7 +40,7 @@ public class L7 extends Level {
         level = new Knoten();
         boden = new Knoten();
 
-Bild background = new Bild(0, 0, 960, 400, "pictures/hintergrund/H0.png");
+        Bild background = new Bild(0, 0, 960, 400, "pictures/hintergrund/H0.png");
         level.add(background);
         door = new Door(480, 300, 100, 100, level);
 
@@ -49,7 +51,7 @@ Bild background = new Bild(0, 0, 960, 400, "pictures/hintergrund/H0.png");
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();
-        Main.getPlayer().positionSetzen(x, y);
+        Main.getPlayer().setPosition(x, y);
     }
 
     @Override
@@ -59,7 +61,7 @@ Bild background = new Bild(0, 0, 960, 400, "pictures/hintergrund/H0.png");
 
             Main.getFrame().entfernen(level);
             Level level3 = new L3();
-            level3.generate(640,350);
+            level3.generate(640, 300);
         }
 
     }

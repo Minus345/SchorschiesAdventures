@@ -14,6 +14,7 @@ public class Main extends Game {
     private static Player player;
     private static Text subtitles;
     private static Text levelName;
+    private static Player playerTemp;
 
     /**
      * Main method where all starts
@@ -34,16 +35,14 @@ public class Main extends Game {
 
         Inv.createInv();
 
-        player = new Player(200, 200, 50, 50, frame);
-        player.setPosition(0, 0);
+        //player = new Player(100, 100, 100, 100, frame);
 
         Tick tick = new Tick();
         manager.anmelden(tick, 50);
         tastenReagierbarAnmelden(tick);
         tastenLosgelassenReagierbarAnmelden(tick);
 
-        //new L0().generate(100,350);
-        new L1().generate(400,300);
+        new Intro().generate(100,300);
 
     }
 
@@ -65,6 +64,15 @@ public class Main extends Game {
 
     public static Player getPlayer() {
         return player;
+    }
+
+    public static void setPlayer(Player player) {
+        Main.player = player;
+    }
+
+    public static Player getPlayerTemp()
+    {
+        return playerTemp;
     }
 
     /**
@@ -92,4 +100,17 @@ public class Main extends Game {
     @Override
     public void tasteReagieren(int i) {
     }
+
+    public static void warte( int ms )
+    {
+        try
+        {
+            Thread.sleep( ms );
+        }
+        catch ( InterruptedException e )
+        {
+            e.printStackTrace();
+        }
+    }
+
 }

@@ -35,6 +35,7 @@ public class Kellergang extends Level {
         Main.setAktiveLevel(this);
         System.out.println("Lade Level ?: Kellergang");
         Main.setLevelname("Kellergang");
+        Main.setText("");
 
         level = new Knoten();
         boden = new Knoten();
@@ -70,10 +71,17 @@ public class Kellergang extends Level {
             System.out.println("Tür wurde geöffnet - Lade Pausenhof Links");
             Main.getFrame().entfernen(level);
             Level level1 = new PHNBLinks();
-            level1.generate(450, 350);
+            level1.generate(450, 300);
         }
     }
 
+    public void playerIsLeft()
+    {
+        Main.getFrame().entfernen(level);
+        Level level1 = new L0();
+        level1.generate(300, 300);
+    }
+    
     @Override
     public Knoten getFloor() {
         return boden;

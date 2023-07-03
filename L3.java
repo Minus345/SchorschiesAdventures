@@ -48,7 +48,7 @@ public class L3 extends Level
         Main.getFrame().add(level);
         if (Main.getPlayer() != null) Main.getPlayer().remove();
         if (Main.getPlayer() != null) Main.getPlayer().add();
-        Main.getPlayer().positionSetzen(x, y);
+        Main.getPlayer().setPosition(x, y);
     }
 
     @Override
@@ -60,7 +60,7 @@ public class L3 extends Level
 
             Main.getFrame().entfernen(level);
             Level level6 = new L6();
-            level6.generate(480,350);
+            level6.generate(480,300);
         }
         if (Main.getPlayer().schneidet(door2))
         {
@@ -68,7 +68,7 @@ public class L3 extends Level
 
             Main.getFrame().entfernen(level);
             Level level7 = new L7();
-            level7.generate(480,350);
+            level7.generate(480,300);
         }
     }
 
@@ -77,7 +77,7 @@ public class L3 extends Level
     {
         Main.getFrame().entfernen(level);
         Level level3 = new L1();
-        level3.generate(900,350);
+        level3.generate(900,300);
     }
 
     @Override

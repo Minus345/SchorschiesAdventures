@@ -44,6 +44,9 @@ public class Lehrergarage extends Level
         boden = new Knoten();
         lavaBoden = new Knoten();
 
+        Bild background = new Bild(0, 0, 960, 400, "pictures/hintergrund/garage.png");
+        level.add(background);
+
         bod = new Floor(0, 400, 3000, level);
         boden.add(bod);
 
@@ -52,8 +55,6 @@ public class Lehrergarage extends Level
         npc1 = new Heidrich(760, 205, 140, 215, level);
 
         Main.getFrame().add(level);
-        if (Main.getPlayer() != null) Main.getPlayer().remove();
-        if (Main.getPlayer() != null) Main.getPlayer().add();
         Main.getPlayer().setPosition(x, y);
     }
 

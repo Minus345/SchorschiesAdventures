@@ -31,7 +31,7 @@ public class L0 extends Level {
 
     @Override
     public void generate(int x, int y) {
-        Main.setPlayer(new Player(200, 200, 100, 100, Main.getFrame()));
+        if(Main.getPlayer() == null) Main.setPlayer(new Player(200, 200, 100, 100, Main.getFrame()));
         Main.setAktiveLevel(this);
         System.out.println("Lade Level 0: Startlevel");
         Main.setLevelname("Kellergewölbe");
@@ -40,6 +40,9 @@ public class L0 extends Level {
         level = new Knoten();
         boden = new Knoten();
         lavaBoden = new Knoten();
+
+        Bild background = new Bild(0, 0, 960, 400, "pictures/hintergrund/Kellergang.png");
+        level.add(background);
 
         door1 = new Door(30, 300, 100, 100, level);
         door2 = new Door(250, 300, 100, 100, level);
@@ -50,8 +53,6 @@ public class L0 extends Level {
         boden.add(weg);
 
         Main.getFrame().add(level);
-        if (Main.getPlayer() != null) Main.getPlayer().remove();
-        if (Main.getPlayer() != null) Main.getPlayer().add();
         Main.getPlayer().setPosition(x, y);
     }
 

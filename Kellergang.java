@@ -61,8 +61,6 @@ public class Kellergang extends Level {
         boden.add(bod);
 
         Main.getFrame().add(level);
-        if (Main.getPlayer() != null) Main.getPlayer().remove();
-        if (Main.getPlayer() != null) Main.getPlayer().add();
         Main.getPlayer().positionSetzen(x, y);
     }
 

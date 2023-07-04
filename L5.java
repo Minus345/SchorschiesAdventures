@@ -31,6 +31,7 @@ public class L5 extends Level {
         Main.setAktiveLevel(this);
         System.out.println("Lade Level 5: A13");
         Main.setText("Altbau Raum A13");
+        Main.setLevelname("L5");
 
         level = new Knoten();
         boden = new Knoten();
@@ -45,8 +46,6 @@ public class L5 extends Level {
         boden.add(weg);
 
         Main.getFrame().add(level);
-        if (Main.getPlayer() != null) Main.getPlayer().remove();
-        if (Main.getPlayer() != null) Main.getPlayer().add();
         Main.getPlayer().setPosition(x, y);
     }
 

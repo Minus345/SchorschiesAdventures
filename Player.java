@@ -101,7 +101,7 @@ public class Player extends Rechteck {
         picture.positionSetzen(x, y);
         rightHitBox.positionSetzen(x + (float) length / 2, y + (float) this.hight / 4);
         leftHitBox.positionSetzen(x, y + (float) this.hight / 4);
-        setPictureRechts(0);
+        //setPictureRechts(0);
     }
 
     /**

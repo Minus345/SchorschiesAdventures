@@ -1,3 +1,4 @@
+import ea.Bild;
 import ea.Knoten;
 
 /**
@@ -33,9 +34,13 @@ public class L1 extends Level {
         Main.setAktiveLevel(this);
         System.out.println("Lade Level 2: Altbaugang(1)");
         Main.setText("Altbaugang");
+        Main.setLevelname("L1");
 
         level = new Knoten();
         boden = new Knoten();
+
+        Bild background = new Bild(0, 0, 960, 400, "pictures/hintergrund/H0.png");
+        level.add(background);
 
         door1 = new Door(320, 300, 100, 100, level);
         door2 = new Door(640, 300, 100, 100, level);
@@ -46,8 +51,6 @@ public class L1 extends Level {
         
 
         Main.getFrame().add(level);
-        if (Main.getPlayer() != null) Main.getPlayer().remove();
-        if (Main.getPlayer() != null) Main.getPlayer().add();
         Main.getPlayer().setPosition(x, y);
     }
 

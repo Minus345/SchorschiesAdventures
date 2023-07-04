@@ -38,6 +38,7 @@ public class L4 extends Level {
         Main.setAktiveLevel(this);
         System.out.println("Lade Level 4: A14(1)");
         Main.setText("Altbau Raum A14");
+        Main.setLevelname("L4");
 
         level = new Knoten();
         boden = new Knoten();
@@ -53,8 +54,6 @@ public class L4 extends Level {
         npc2 = new Loldea(100, 180, 200, 250, level);
 
         Main.getFrame().add(level);
-        if (Main.getPlayer() != null) Main.getPlayer().remove();
-        if (Main.getPlayer() != null) Main.getPlayer().add();
         Main.getPlayer().setPosition(x, y);
     }
 

@@ -75,8 +75,6 @@ public class Physikraum extends Level
         Schulbank3 = new Schulbank(750, 180, 120, 120, level);
         Schulbank4 = new Schulbank(150, 260, 120, 120, level);
         Main.getFrame().add(level);
-        if (Main.getPlayer() != null) Main.getPlayer().remove();
-        if (Main.getPlayer() != null) Main.getPlayer().add();
         Main.getPlayer().setPosition(910, 230);
     }
 

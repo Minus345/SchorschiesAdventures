@@ -1,4 +1,3 @@
-import com.sun.prism.paint.Color;
 import ea.Game;
 import ea.Knoten;
 import ea.Text;
@@ -15,13 +14,22 @@ public class Main extends Game {
     private static Text subtitles;
     private static Text levelName;
     private static Player playerTemp;
+    private static boolean runningAnimation;
 
     /**
      * Main method where all starts
      * create all necessary objects
      */
-    public Main() {
+    public Main(String animation) {
         super(960, 720);
+        if (animation.equals("active")){
+            runningAnimation = true;
+            System.out.println("running animation enabled");
+        }else{
+            runningAnimation = false;
+            System.out.println("running animation disabled");
+        }
+
         frame = new Knoten();
         wurzel.add(frame);
 
@@ -42,12 +50,12 @@ public class Main extends Game {
         tastenReagierbarAnmelden(tick);
         tastenLosgelassenReagierbarAnmelden(tick);
 
-        new Intro().generate(100,300);
+        new Intro().generate(100, 300);
 
     }
 
     public static void main(String[] args) {
-        new Main();
+        new Main(args[0]);
     }
 
     public static Knoten getFrame() {
@@ -70,8 +78,7 @@ public class Main extends Game {
         Main.player = player;
     }
 
-    public static Player getPlayerTemp()
-    {
+    public static Player getPlayerTemp() {
         return playerTemp;
     }
 
@@ -101,14 +108,18 @@ public class Main extends Game {
     public void tasteReagieren(int i) {
     }
 
-    public static void warte( int ms )
-    {
-        try
-        {
-            Thread.sleep( ms );
-        }
-        catch ( InterruptedException e )
-        {
+    public static boolean isRunningAnimation() {
+        return runningAnimation;
+    }
+
+    public static void setRunningAnimation(boolean runningAnimation) {
+        Main.runningAnimation = runningAnimation;
+    }
+
+    public static void warte(int ms) {
+        try {
+            Thread.sleep(ms);
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }

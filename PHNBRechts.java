@@ -36,8 +36,6 @@ public class PHNBRechts extends Level
         door1 = new Door(830, 300, 100, 100, level);
 
         Main.getFrame().add(level);
-        if (Main.getPlayer() != null) Main.getPlayer().remove();
-        if (Main.getPlayer() != null) Main.getPlayer().add();
         Main.getPlayer().setPosition(x, y);
     }
 

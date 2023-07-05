@@ -15,7 +15,7 @@ public abstract class Npc extends Rechteck {
     private Text name;
 
     /**
-     * creates a Nec with a hitbox (Rechteck)
+     * creates a Npc with a hitbox (Rechteck)
      *
      * @param x      x-Coordinate of the npc and it´s hitbox
      * @param y      y-Coordinate of the npc and it´s hitbox

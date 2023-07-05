@@ -1,5 +1,6 @@
 #BlueJ class context
 comment0.target=Tick
+comment0.text=\r\n\ in\ this\ class\ all\ the\ key\ aktions\ are\ handled\r\n\ @author\ Max\r\n\ @version\ 2\r\n
 comment1.params=
 comment1.target=void\ tick()
 comment1.text=\r\n\ the\ method\ is\ called\ every\ tick\r\n

@@ -2,6 +2,12 @@ import ea.TastenLosgelassenReagierbar;
 import ea.TastenReagierbar;
 import ea.Ticker;
 
+/**
+ * in this class all the key aktions are handled
+ * @author Max
+ * @version 2
+ */
+
 public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierbar {
 
     private boolean continueJumping;
@@ -21,15 +27,12 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
      * the method is called every tick
      */
     public void tick() {
-        if (Main.getPlayer() == null) return;
+        if (Main.getPlayer() == null) return; //safety sould not happen
+
+        //---- Jumping ----
         //wenn nichts unter dir ist dann nach unten fallen (nicht springen)
         if (!Main.getPlayer().schneidet(Main.getAktiveLevel().getFloor()) && !continueJumping) {
             Main.getPlayer().setPosition(Main.getPlayer().getX(), (float) (Main.getPlayer().getY() + 8));
-        }
-
-        if (Main.getAktiveLevel().getLava() != null && Main.getPlayer().schneidet(Main.getAktiveLevel().getLava())) { //berührung mit Lava
-            //stoppen();
-            System.out.println("in Lava gefallen");
         }
 
         if (continueJumping) {
@@ -49,6 +52,12 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
             }
         }
 
+        //---- Lava ----
+        if (Main.getAktiveLevel().getLava() != null && Main.getPlayer().schneidet(Main.getAktiveLevel().getLava())) { //berührung mit Lava
+            //stoppen();
+            System.out.println("in Lava gefallen");
+        }
+
         //Is Right
         if (Main.getPlayer().getX() > 900) {
             Main.getAktiveLevel().playerIsRight();
@@ -59,6 +68,7 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
             Main.getAktiveLevel().playerIsLeft();
         }
 
+        // ---- movement Functions ----
         if (a && !Main.getPlayer().getLeftHitBox().schneidet(Main.getAktiveLevel().getFloor())) { //checks if the player runs into stairs on the ground - left
             if (sprint) {
                 Main.getPlayer().setPosition(Main.getPlayer().getX() - 12, Main.getPlayer().getY());
@@ -75,6 +85,7 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
             }
         }
 
+        // ---- Animation Functions ----
         if (Main.isRunningAnimation()) {
             if (d) {
                 x++;

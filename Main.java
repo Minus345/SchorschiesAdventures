@@ -13,7 +13,6 @@ public class Main extends Game {
     private static Player player;
     private static Text subtitles;
     private static Text levelName;
-    private static Player playerTemp;
     private static boolean runningAnimation;
 
     /**
@@ -54,32 +53,53 @@ public class Main extends Game {
 
     }
 
+    /**
+     * Main method to start
+     * @param args - "active" -> to start with player animation
+     */
     public static void main(String[] args) {
         new Main(args[0]);
     }
 
+    /**
+     * returns the active Frame
+     * @return
+     */
     public static Knoten getFrame() {
         return frame;
     }
 
+    /**
+     * return the active Level
+     * @return
+     */
     public static Level getAktiveLevel() {
         return aktiveLevel;
     }
 
+    /**
+     * sets the aktive Level so it can be displayed
+     * @param aktiveLevel
+     */
     public static void setAktiveLevel(Level aktiveLevel) {
         Main.aktiveLevel = aktiveLevel;
     }
 
+    /**
+     * reruns the active Player
+     * @return
+     */
     public static Player getPlayer() {
         return player;
     }
 
+    /**
+     * sets the active player
+     * there should only be one player
+     * @param player
+     */
     public static void setPlayer(Player player) {
         Main.player = player;
-    }
-
-    public static Player getPlayerTemp() {
-        return playerTemp;
     }
 
     /**
@@ -89,39 +109,48 @@ public class Main extends Game {
         subtitles.setzeInhalt(text);
     }
 
+    /**
+     * sets the level name
+     * @param text
+     */
     public static void setLevelname(String text) {
         levelName.setzeInhalt(text);
     }
 
     /**
-     * @param colour the colour for the subtitles for the story
+     * @param colour the colour for the subtitles for the story so that it can be changed when the background ist not black
      */
     public static void setTextColour(String colour) {
         subtitles.setzeFarbe(colour);
     }
 
+    /**
+     * a
+     * @param colour the colour for the subtitles for the story so that it can be changed when the background ist not black
+     */
     public static void setLevelNameColour(String colour) {
         levelName.setzeFarbe(colour);
     }
 
-    @Override
-    public void tasteReagieren(int i) {
-    }
-
+    /**
+     * the parameter for the player animation
+     * if it´s true the animation is aktiv
+     * @return
+     */
     public static boolean isRunningAnimation() {
         return runningAnimation;
     }
 
+    /**
+     * sets the running animation for the player
+     * @param runningAnimation
+     */
     public static void setRunningAnimation(boolean runningAnimation) {
         Main.runningAnimation = runningAnimation;
     }
 
-    public static void warte(int ms) {
-        try {
-            Thread.sleep(ms);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+    @Override
+    public void tasteReagieren(int i) {
     }
 
 }

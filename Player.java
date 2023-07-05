@@ -124,10 +124,18 @@ public class Player extends Rechteck {
         room.entfernen(leftHitBox);
     }
 
+    /**
+     * returns the right Hitbox
+     * @return
+     */
     public Rechteck getRightHitBox() {
         return rightHitBox;
     }
 
+    /**
+     * returns the left Hitbox
+     * @return
+     */
     public Rechteck getLeftHitBox() {
         return leftHitBox;
     }

@@ -1,6 +1,5 @@
 import ea.Bild;
 import ea.Knoten;
-import ea.Text;
 
 public class PHNBLinks extends Level
 {
@@ -30,6 +29,9 @@ public class PHNBLinks extends Level
         level = new Knoten();
         boden = new Knoten();
         lavaBoden = new Knoten();
+
+        Bild background = new Bild(0, 0, 960, 400, "pictures/hintergrund/NPR.png");
+        level.add(background);
 
         door1 = new Door(430, 300, 100, 100, level);
         door2 = new Door(5, 300, 100, 100, level);

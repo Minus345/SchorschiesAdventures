@@ -10,6 +10,7 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
     private boolean w;
     private boolean a;
     private boolean d;
+    private boolean sprint;
 
     private int x = 0;
     private int y = 0;
@@ -59,10 +60,19 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
         }
 
         if (a && !Main.getPlayer().getLeftHitBox().schneidet(Main.getAktiveLevel().getFloor())) { //checks if the player runs into stairs on the ground - left
-            Main.getPlayer().setPosition(Main.getPlayer().getX() - 6, Main.getPlayer().getY());
+            if (sprint) {
+                Main.getPlayer().setPosition(Main.getPlayer().getX() - 12, Main.getPlayer().getY());
+            } else {
+                Main.getPlayer().setPosition(Main.getPlayer().getX() - 6, Main.getPlayer().getY());
+            }
         }
+
         if (d && !Main.getPlayer().getRightHitBox().schneidet(Main.getAktiveLevel().getFloor())) { //checks if the player runs into stairs on the ground - right
-            Main.getPlayer().setPosition(Main.getPlayer().getX() + 6, Main.getPlayer().getY());
+            if (sprint) {
+                Main.getPlayer().setPosition(Main.getPlayer().getX() + 12, Main.getPlayer().getY());
+            } else {
+                Main.getPlayer().setPosition(Main.getPlayer().getX() + 6, Main.getPlayer().getY());
+            }
         }
 
         if (Main.isRunningAnimation()) {
@@ -174,8 +184,8 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
                 d = true;
                 //System.out.println("D");
                 break;
-            case 18:
-                //System.out.println("S");
+            case 30:
+                sprint = true;
                 break;
             case 4:
                 //System.out.println("E");
@@ -205,8 +215,8 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
                 d = false;
                 //System.out.println("D");
                 break;
-            case 18:
-                //System.out.println("S");
+            case 30:
+                sprint = false;
                 break;
             case 4:
                 //System.out.println("E");

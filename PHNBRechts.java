@@ -1,6 +1,5 @@
 import ea.Bild;
 import ea.Knoten;
-import ea.Text;
 
 public class PHNBRechts extends Level
 {
@@ -29,6 +28,9 @@ public class PHNBRechts extends Level
         level = new Knoten();
         boden = new Knoten();
         lavaBoden = new Knoten();
+
+        Bild background = new Bild(0, 0, 960, 400, "pictures/hintergrund/NPL.png");
+        level.add(background);
 
         bod = new Floor(0, 400, 3000, level);
         boden.add(bod);

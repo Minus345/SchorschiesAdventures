@@ -9,30 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="fix text color">
-      <change afterPath="$PROJECT_DIR$/pictures/hintergrund/NPL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pictures/hintergrund/NPR.png" afterDir="false" />
+    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="add background">
+      <change afterPath="$PROJECT_DIR$/EndeMiegel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chest.class" beforeDir="false" afterPath="$PROJECT_DIR$/Chest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Debug1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Debug2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Debug2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Door.class" beforeDir="false" afterPath="$PROJECT_DIR$/Door.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Floor.class" beforeDir="false" afterPath="$PROJECT_DIR$/Floor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Key.class" beforeDir="false" afterPath="$PROJECT_DIR$/Key.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/L1.class" beforeDir="false" afterPath="$PROJECT_DIR$/L1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lava.class" beforeDir="false" afterPath="$PROJECT_DIR$/Lava.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/Level.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Npc.class" beforeDir="false" afterPath="$PROJECT_DIR$/Npc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Npc1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Npc1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Npc2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Npc2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHNBLinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/PHNBLinks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHNBRechts.java" beforeDir="false" afterPath="$PROJECT_DIR$/PHNBRechts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Potion.class" beforeDir="false" afterPath="$PROJECT_DIR$/Potion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rieger.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rieger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Schulbank.class" beforeDir="false" afterPath="$PROJECT_DIR$/Schulbank.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tick.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tick.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tick.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-alpha.log" beforeDir="false" afterPath="$PROJECT_DIR$/engine-alpha.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lehrergarage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lehrergarage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Physikraum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Physikraum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,11 +95,11 @@
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\hintergrund" />
       <recent name="C:\Users\Tina\Documents\Coding\SchorschiesAdventures\pictures\hintergrund" />
       <recent name="C:\Users\Tina\Documents\Coding\SchorschiesAdventures" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\lehrer" />
-      <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\tuer" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -325,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686640397221</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="add background">
+      <created>1688569963901</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1688569963901</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -373,7 +361,8 @@
     <MESSAGE value="fix level 0 -7" />
     <MESSAGE value="fix pictures" />
     <MESSAGE value="fix text color" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix text color" />
+    <MESSAGE value="add background" />
+    <option name="LAST_COMMIT_MESSAGE" value="add background" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

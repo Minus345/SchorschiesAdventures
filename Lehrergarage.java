@@ -4,6 +4,9 @@ import ea.Text;
 
 public class Lehrergarage extends Level
 {
+    /**
+     * All Objects that exist in the Level
+     */
     private Knoten level;
     private Knoten boden;
     private Knoten lavaBoden;
@@ -23,16 +26,26 @@ public class Lehrergarage extends Level
     private Text story11;
     private int geredet = 0;
 
+    // Konstruktor
     public Lehrergarage()
     {
         super();
     }
 
+    /**
+     * @Override
+     * isn't used in this class but generates the objects
+     */
     public void generate()
     {
 
     }
 
+    /**
+     * @Override
+     * generates all the Objects and sets the texts, which are shown in the game
+     * also it receives the coordinates, which the player has to spawn on
+     */
     public void generate(int x, int y)
     {
         Main.setAktiveLevel(this);
@@ -44,9 +57,6 @@ public class Lehrergarage extends Level
         boden = new Knoten();
         lavaBoden = new Knoten();
 
-        Bild background = new Bild(0, 0, 960, 400, "pictures/hintergrund/garage.png");
-        level.add(background);
-
         bod = new Floor(0, 400, 3000, level);
         boden.add(bod);
 
@@ -55,9 +65,15 @@ public class Lehrergarage extends Level
         npc1 = new Heidrich(760, 205, 140, 215, level);
 
         Main.getFrame().add(level);
+        if (Main.getPlayer() != null) Main.getPlayer().remove();
+        if (Main.getPlayer() != null) Main.getPlayer().add();
         Main.getPlayer().setPosition(x, y);
     }
 
+    /**
+     * @Override
+     * will be called when the player presses "e" to interact with objects
+     */
     public void isEPressed()
     {
         if (Main.getPlayer().schneidet(door1) && level.besitzt(door1))
@@ -68,7 +84,11 @@ public class Lehrergarage extends Level
             level1.generate(830, 300);
         }
 
-        if (Main.getPlayer().schneidet(npc1) && level.besitzt(npc1) && !Inv.hasPotion && geredet == 0) 
+        if(Inv.isHasPotion()) System.out.println("potion");
+        System.out.println(geredet);
+
+
+        if (Main.getPlayer().schneidet(npc1)&& geredet == 0 && !Inv.hasPotion)
         {
             story1 = new Text("System.Out.println(''Java... BlueJ... *murmel*", 20, 500);
             story2 = new Text("muss programmieren...", 20, 540);
@@ -80,7 +100,7 @@ public class Lehrergarage extends Level
             return;
         }
 
-        if (geredet == 1) 
+        if (geredet == 1 && !Inv.hasPotion)
         {
             level.entfernen(story1);
             level.entfernen(story2);
@@ -94,7 +114,7 @@ public class Lehrergarage extends Level
             return;
         }
 
-        if (geredet == 2) 
+        if (geredet == 2 && !Inv.hasPotion)
         {
             level.entfernen(story3);
             level.entfernen(story4);
@@ -102,7 +122,7 @@ public class Lehrergarage extends Level
             return;
         }
 
-        if (Main.getPlayer().schneidet(npc1) && level.besitzt(npc1) && Inv.hasPotion) 
+        if (Main.getPlayer().schneidet(npc1) && level.besitzt(npc1) && Inv.hasPotion)
         {
             story5 = new Text("*puff* ... System.Out.println('' Wo bin ich?", 20, 500);
             story6 = new Text("Was machst du hier? Was ist passiert?", 20, 540);
@@ -113,11 +133,12 @@ public class Lehrergarage extends Level
             level.add(story5);
             level.add(story6);
             level.add(story7);
+            Inv.setHasPotion(false);
             geredet = 4;
             return;
         }
 
-        if (geredet == 4) 
+        if (geredet == 4)
         {
             level.entfernen(story5);
             level.entfernen(story6);
@@ -155,13 +176,19 @@ public class Lehrergarage extends Level
         }
     }
 
-    @Override
+    /**
+     * @Override
+     * @return returns the "Knoten" floor, where all objects, from the floor, are stored in
+     */
     public Knoten getFloor()
     {
         return boden;
     }
 
-    @Override
+    /**
+     * @Override
+     * @return returns the "Knoten" lava, where all objects, which are lava, are stored in
+     */
     public Knoten getLava()
     {
         return lavaBoden;

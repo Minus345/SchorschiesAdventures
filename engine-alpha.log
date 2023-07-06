@@ -1,1 +1,1 @@
-[Wed Jul 05 17:09:18 CEST 2023][ERROR] Das Bild konnte nicht geladen werden: pictures/hintergrund/NBR.png (ImageLoader.java:51)
+[Thu Jul 06 17:37:17 CEST 2023][ERROR] Kritischer Fehler im Ticker: Eine Ausnahme wurde nicht abgefangen. Der Ticker wurde angehalten. Die folgende StackTrace sollte dir weitere Informationen liefern. (Manager.java:199)

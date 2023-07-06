@@ -57,6 +57,9 @@ public class Lehrergarage extends Level
         boden = new Knoten();
         lavaBoden = new Knoten();
 
+        Bild background = new Bild(0, 0, 960, 400, "pictures/hintergrund/garage.png");
+        level.add(background);
+
         bod = new Floor(0, 400, 3000, level);
         boden.add(bod);
 

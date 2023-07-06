@@ -21,10 +21,10 @@ public class Main extends Game {
      */
     public Main(String animation) {
         super(960, 720);
-        if (animation.equals("active")){
+        if (animation.equals("active")) {
             runningAnimation = true;
             System.out.println("running animation enabled");
-        }else{
+        } else {
             runningAnimation = false;
             System.out.println("running animation disabled");
         }
@@ -42,7 +42,11 @@ public class Main extends Game {
 
         Inv.createInv();
 
-        //player = new Player(100, 100, 100, 100, frame);
+        /*
+        player = new Player(100, 100, 100, 100, frame);
+        new Lehrergarage().generate(300,300);
+       Inv.setHasPotion(true);
+         */
 
         Tick tick = new Tick();
         manager.anmelden(tick, 50);
@@ -55,6 +59,7 @@ public class Main extends Game {
 
     /**
      * Main method to start
+     *
      * @param args - "active" -> to start with player animation
      */
     public static void main(String[] args) {
@@ -63,6 +68,7 @@ public class Main extends Game {
 
     /**
      * returns the active Frame
+     *
      * @return
      */
     public static Knoten getFrame() {
@@ -71,6 +77,7 @@ public class Main extends Game {
 
     /**
      * return the active Level
+     *
      * @return
      */
     public static Level getAktiveLevel() {
@@ -79,6 +86,7 @@ public class Main extends Game {
 
     /**
      * sets the aktive Level so it can be displayed
+     *
      * @param aktiveLevel
      */
     public static void setAktiveLevel(Level aktiveLevel) {
@@ -87,6 +95,7 @@ public class Main extends Game {
 
     /**
      * reruns the active Player
+     *
      * @return
      */
     public static Player getPlayer() {
@@ -96,6 +105,7 @@ public class Main extends Game {
     /**
      * sets the active player
      * there should only be one player
+     *
      * @param player
      */
     public static void setPlayer(Player player) {
@@ -111,6 +121,7 @@ public class Main extends Game {
 
     /**
      * sets the level name
+     *
      * @param text
      */
     public static void setLevelname(String text) {
@@ -126,6 +137,7 @@ public class Main extends Game {
 
     /**
      * a
+     *
      * @param colour the colour for the subtitles for the story so that it can be changed when the background ist not black
      */
     public static void setLevelNameColour(String colour) {
@@ -135,6 +147,7 @@ public class Main extends Game {
     /**
      * the parameter for the player animation
      * if it´s true the animation is aktiv
+     *
      * @return
      */
     public static boolean isRunningAnimation() {
@@ -143,6 +156,7 @@ public class Main extends Game {
 
     /**
      * sets the running animation for the player
+     *
      * @param runningAnimation
      */
     public static void setRunningAnimation(boolean runningAnimation) {

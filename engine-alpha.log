@@ -1,1 +1,1 @@
-[Thu Jul 06 17:37:17 CEST 2023][ERROR] Kritischer Fehler im Ticker: Eine Ausnahme wurde nicht abgefangen. Der Ticker wurde angehalten. Die folgende StackTrace sollte dir weitere Informationen liefern. (Manager.java:199)
+[Thu Jul 06 22:35:42 CEST 2023][ERROR] Das Bild konnte nicht geladen werden: pictures/lehrer/axolotl klein.png (ImageLoader.java:51)

@@ -42,11 +42,11 @@ public class Main extends Game {
 
         Inv.createInv();
 
-        /*
+/*
         player = new Player(100, 100, 100, 100, frame);
-        new Lehrergarage().generate(300,300);
-       Inv.setHasPotion(true);
-         */
+        new L7().generate(300, 300);
+        //Inv.setHasPotion(true);
+ */
 
         Tick tick = new Tick();
         manager.anmelden(tick, 50);

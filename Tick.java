@@ -27,6 +27,9 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
      * the method is called every tick
      */
     public void tick() {
+
+        if(Inv.isHasPotion()) System.out.println("potion");
+
         if (Main.getPlayer() == null) return; //safety sould not happen
 
         //---- Jumping ----

@@ -182,7 +182,6 @@ public class Physikraum extends Level
             story6.farbeSetzen("weiss");
             level.add(story5);
             level.add(story6);
-            Inv.setHasPotion(false);
             geredet = 4;
             return;
         }

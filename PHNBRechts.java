@@ -49,7 +49,6 @@ public class PHNBRechts extends Level
             Main.getFrame().entfernen(level);
             Level level1 = new Lehrergarage();
             level1.generate(30,300);
-            return;
         }
     }
 

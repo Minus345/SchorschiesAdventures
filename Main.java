@@ -19,15 +19,11 @@ public class Main extends Game {
      * Main method where all starts
      * create all necessary objects
      */
-    public Main(String animation) {
+    public Main() {
         super(960, 720);
-        if (animation.equals("active")) {
-            runningAnimation = true;
-            System.out.println("running animation enabled");
-        } else {
-            runningAnimation = false;
-            System.out.println("running animation disabled");
-        }
+
+        runningAnimation = true;
+        System.out.println("running animation enabled");
 
         frame = new Knoten();
         wurzel.add(frame);
@@ -42,11 +38,11 @@ public class Main extends Game {
 
         Inv.createInv();
 
-/*
-        player = new Player(100, 100, 100, 100, frame);
-        new L7().generate(300, 300);
+
+        //player = new Player(100, 100, 100, 100, frame);
+        //new L7().generate(300, 300);
         //Inv.setHasPotion(true);
- */
+
 
         Tick tick = new Tick();
         manager.anmelden(tick, 50);
@@ -63,7 +59,7 @@ public class Main extends Game {
      * @param args - "active" -> to start with player animation
      */
     public static void main(String[] args) {
-        new Main(args[0]);
+        new Main();
     }
 
     /**

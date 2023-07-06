@@ -4,6 +4,7 @@ import ea.Ticker;
 
 /**
  * in this class all the key aktions are handled
+ *
  * @author Max
  * @version 2
  */
@@ -28,7 +29,8 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
      */
     public void tick() {
 
-        if(Inv.isHasPotion()) System.out.println("potion");
+        //if(Inv.isHasPotion()) System.out.println("potion");
+        if (Main.getPlayer() != null) System.out.println(Main.getPlayer().getX() + " " + Main.getPlayer().getY());
 
         if (Main.getPlayer() == null) return; //safety sould not happen
 
@@ -93,7 +95,6 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
             if (d) {
                 x++;
                 if (x == 5) {
-                    // System.out.println("animation");
                     y++;
                     if (y == 5) {
                         y = 0;

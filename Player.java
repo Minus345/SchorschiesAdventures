@@ -40,7 +40,7 @@ public class Player extends Rechteck {
         arrayr[3] = new Bild(x, y, length, height, "pictures/animation/4r.png");
         arrayr[4] = new Bild(x, y, length, height, "pictures/animation/5r.png");
         arrayr[5] = new Bild(x, y, length, height, "pictures/animation/6r.png");
-        
+
         arrayl = new Bild[6];
         arrayl[0] = new Bild(x, y, length, height, "pictures/animation/1.png");
         arrayl[1] = new Bild(x, y, length, height, "pictures/animation/2.png");
@@ -48,7 +48,9 @@ public class Player extends Rechteck {
         arrayl[3] = new Bild(x, y, length, height, "pictures/animation/4.png");
         arrayl[4] = new Bild(x, y, length, height, "pictures/animation/5.png");
         arrayl[5] = new Bild(x, y, length, height, "pictures/animation/6.png");
-        
+
+
+        this.sichtbarSetzen(false);
         farbeSetzen("rot");
         positionSetzen(0, 0);
         room.add(this);
@@ -60,7 +62,6 @@ public class Player extends Rechteck {
         leftHitBox.farbeSetzen("blau");
         room.add(leftHitBox);
 
-        this.sichtbarSetzen(false);
         rightHitBox.sichtbarSetzen(false);
         leftHitBox.sichtbarSetzen(false);
 
@@ -79,7 +80,7 @@ public class Player extends Rechteck {
         picture.positionSetzen(Main.getPlayer().getX(), Main.getPlayer().getY());
         room.add(picture);
     }
-    
+
     /**
      * sets the picture vor the animation Rechts
      */
@@ -89,7 +90,7 @@ public class Player extends Rechteck {
         picture.positionSetzen(Main.getPlayer().getX(), Main.getPlayer().getY());
         room.add(picture);
     }
-    
+
     /**
      * sets the position for the player and the hitbox
      *

@@ -31,7 +31,6 @@ public class L0 extends Level {
 
     @Override
     public void generate(int x, int y) {
-        if(Main.getPlayer() == null) Main.setPlayer(new Player(200, 200, 100, 100, Main.getFrame()));
         Main.setAktiveLevel(this);
         System.out.println("Lade Level 0: Startlevel");
         Main.setLevelname("Kellergewölbe");
@@ -51,6 +50,8 @@ public class L0 extends Level {
 
         weg = new Floor(0, 400, 960, level);
         boden.add(weg);
+
+        if(Main.getPlayer() == null) Main.setPlayer(new Player(200, 200, 100, 100, Main.getFrame()));
 
         Main.getFrame().add(level);
         Main.getPlayer().setPosition(x, y);

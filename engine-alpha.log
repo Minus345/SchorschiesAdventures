@@ -1,1 +1,1 @@
-[Thu Jul 06 22:58:14 CEST 2023][ERROR] Kritischer Fehler im Ticker: Eine Ausnahme wurde nicht abgefangen. Der Ticker wurde angehalten. Die folgende StackTrace sollte dir weitere Informationen liefern. (Manager.java:199)
+[Fri Jul 07 11:27:32 CEST 2023][ERROR] Das Bild konnte nicht geladen werden: pictures/lehrer/GoldenGöder.png (ImageLoader.java:51)

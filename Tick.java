@@ -30,7 +30,7 @@ public class Tick implements Ticker, TastenReagierbar, TastenLosgelassenReagierb
     public void tick() {
 
         //if(Inv.isHasPotion()) System.out.println("potion");
-        if (Main.getPlayer() != null) System.out.println(Main.getPlayer().getX() + " " + Main.getPlayer().getY());
+        //if (Main.getPlayer() != null) System.out.println(Main.getPlayer().getX() + " " + Main.getPlayer().getY());
 
         if (Main.getPlayer() == null) return; //safety sould not happen
 

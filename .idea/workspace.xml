@@ -9,11 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="merge changes from Kevin">
+    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="picture fixes">
+      <change afterPath="$PROJECT_DIR$/pictures/lehrer/GoldenGder.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/L0.java" beforeDir="false" afterPath="$PROJECT_DIR$/L0.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCGöder.java" beforeDir="false" afterPath="$PROJECT_DIR$/NPCGöder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tick.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tick.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/engine-alpha.log" beforeDir="false" afterPath="$PROJECT_DIR$/engine-alpha.log" afterDir="false" />
     </list>
@@ -73,35 +72,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;V2&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Tina/Documents/Coding/SchorschiesAdventures/pictures/hintergrund&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.30689654&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "V2",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "C:/Users/Tina/Documents/Coding/SchorschiesAdventures/pictures/lehrer",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.30689654",
+    "settings.editor.selected.configurable": "configurable.group.language"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Tina\Documents\Coding\SchorschiesAdventures\pictures\lehrer" />
       <recent name="C:\Users\Tina\Documents\Coding\SchorschiesAdventures\pictures\hintergrund" />
       <recent name="C:\Users\Tina\Documents\Coding\SchorschiesAdventures" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2" />
-      <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\hintergrund" />
       <recent name="C:\Users\Tina\Documents\Coding\SchorschiesAdventures\pictures\hintergrund" />
       <recent name="C:\Users\Tina\Documents\Coding\SchorschiesAdventures" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\lehrer" />
+      <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\hintergrund" />
+      <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\tuer" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="" />
@@ -111,6 +111,7 @@
     <configuration name="Game" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Schorschies Adventures - V2" />
+      <option name="PROGRAM_PARAMETERS" value="active" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -307,35 +308,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686640397221</updated>
     </task>
-    <task id="LOCAL-00027" summary="add background">
-      <created>1688569963901</created>
+    <task id="LOCAL-00027" summary="fixes">
+      <created>1688453206110</created>
       <option name="number" value="00027" />
       <option name="presentableId" value="LOCAL-00027" />
       <option name="project" value="LOCAL" />
-      <updated>1688569963901</updated>
+      <updated>1688453206110</updated>
     </task>
-    <task id="LOCAL-00028" summary="add changes from 4.7">
-      <created>1688570756376</created>
+    <task id="LOCAL-00028" summary="picture fixes">
+      <created>1688658133441</created>
       <option name="number" value="00028" />
       <option name="presentableId" value="LOCAL-00028" />
       <option name="project" value="LOCAL" />
-      <updated>1688570756376</updated>
+      <updated>1688658133441</updated>
     </task>
-    <task id="LOCAL-00029" summary="add Documentation">
-      <created>1688575546840</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1688575546840</updated>
-    </task>
-    <task id="LOCAL-00030" summary="merge changes from Kevin">
-      <created>1688676015457</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1688676015457</updated>
-    </task>
-    <option name="localTasksCounter" value="31" />
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -372,7 +359,6 @@
     <MESSAGE value="bugfixes" />
     <MESSAGE value="add Physikraum.java and player movement correction" />
     <MESSAGE value="fix background picture size" />
-    <MESSAGE value="fixes" />
     <MESSAGE value="Physikraum.java update" />
     <MESSAGE value="Physikraum.java update 2" />
     <MESSAGE value="test" />
@@ -383,17 +369,12 @@
     <MESSAGE value="fix level 0 -7" />
     <MESSAGE value="fix pictures" />
     <MESSAGE value="fix text color" />
-    <MESSAGE value="add background" />
-    <MESSAGE value="add changes from 4.7" />
-    <MESSAGE value="add Documentation" />
-    <MESSAGE value="merge changes from Kevin" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge changes from Kevin" />
+    <MESSAGE value="fixes" />
+    <MESSAGE value="picture fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="picture fixes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Schorschies_Adventures___V2$Game.ic" NAME="Game Coverage Results" MODIFIED="1686515748585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

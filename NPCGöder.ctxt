@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=NPCG\u00F6der
+comment0.text=\r\n\ @author\ Kevin\r\n
+comment1.params=x\ y\ length\ height\ room
+comment1.target=NPCG\u00F6der(int,\ int,\ int,\ int,\ ea.Knoten)
+numComments=2

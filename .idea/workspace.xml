@@ -9,12 +9,50 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="picture fixes">
-      <change afterPath="$PROJECT_DIR$/pictures/lehrer/GoldenGder.png" afterDir="false" />
+    <list default="true" id="15c1bafc-d421-447f-a38e-77bf529af51a" name="Changes" comment="add picture">
+      <change afterPath="$PROJECT_DIR$/NPCGöder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NPCGöder.ctxt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Starten.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NPCGöder.java" beforeDir="false" afterPath="$PROJECT_DIR$/NPCGöder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tick.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine-alpha.log" beforeDir="false" afterPath="$PROJECT_DIR$/engine-alpha.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Debug1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Debug2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Debug2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndeGoldie.class" beforeDir="false" afterPath="$PROJECT_DIR$/EndeGoldie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndeHannesmann.class" beforeDir="false" afterPath="$PROJECT_DIR$/EndeHannesmann.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndeLoldea.class" beforeDir="false" afterPath="$PROJECT_DIR$/EndeLoldea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndeMiegel.class" beforeDir="false" afterPath="$PROJECT_DIR$/EndeMiegel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndeWaldrich.class" beforeDir="false" afterPath="$PROJECT_DIR$/EndeWaldrich.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Heidrich.class" beforeDir="false" afterPath="$PROJECT_DIR$/Heidrich.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Intro.class" beforeDir="false" afterPath="$PROJECT_DIR$/Intro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Inv.class" beforeDir="false" afterPath="$PROJECT_DIR$/Inv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kellergang.class" beforeDir="false" afterPath="$PROJECT_DIR$/Kellergang.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L0.class" beforeDir="false" afterPath="$PROJECT_DIR$/L0.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L1.class" beforeDir="false" afterPath="$PROJECT_DIR$/L1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L3.class" beforeDir="false" afterPath="$PROJECT_DIR$/L3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L4.class" beforeDir="false" afterPath="$PROJECT_DIR$/L4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L5.class" beforeDir="false" afterPath="$PROJECT_DIR$/L5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L6.class" beforeDir="false" afterPath="$PROJECT_DIR$/L6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/L7.class" beforeDir="false" afterPath="$PROJECT_DIR$/L7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lehrergarage.class" beforeDir="false" afterPath="$PROJECT_DIR$/Lehrergarage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Level.class" beforeDir="false" afterPath="$PROJECT_DIR$/Level.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Loldea.class" beforeDir="false" afterPath="$PROJECT_DIR$/Loldea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Main.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NPCLoldea.class" beforeDir="false" afterPath="$PROJECT_DIR$/NPCLoldea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Npc.class" beforeDir="false" afterPath="$PROJECT_DIR$/Npc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Npc1.class" beforeDir="false" afterPath="$PROJECT_DIR$/Npc1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Npc2.class" beforeDir="false" afterPath="$PROJECT_DIR$/Npc2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHNBLinks.class" beforeDir="false" afterPath="$PROJECT_DIR$/PHNBLinks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHNBRechts.class" beforeDir="false" afterPath="$PROJECT_DIR$/PHNBRechts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Physikraum.class" beforeDir="false" afterPath="$PROJECT_DIR$/Physikraum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player2.ctxt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Player2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rieger.class" beforeDir="false" afterPath="$PROJECT_DIR$/Rieger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tick.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tick.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tick.ctxt" beforeDir="false" afterPath="$PROJECT_DIR$/Tick.ctxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tutorial.class" beforeDir="false" afterPath="$PROJECT_DIR$/Tutorial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.bluej" beforeDir="false" afterPath="$PROJECT_DIR$/package.bluej" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,8 +135,8 @@
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Tina\Documents\Coding\SchorschiesAdventures\pictures\hintergrund" />
       <recent name="C:\Users\Tina\Documents\Coding\SchorschiesAdventures" />
+      <recent name="C:\Users\Tina\Documents\Coding\SchorschiesAdventures\pictures\hintergrund" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\lehrer" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\hintergrund" />
       <recent name="C:\Users\max\Documents\Info Ref\Schorschies Adventures - V2\pictures\tuer" />
@@ -322,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688658133441</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="add picture">
+      <created>1688722280498</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1688722280499</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -371,7 +416,8 @@
     <MESSAGE value="fix text color" />
     <MESSAGE value="fixes" />
     <MESSAGE value="picture fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="picture fixes" />
+    <MESSAGE value="add picture" />
+    <option name="LAST_COMMIT_MESSAGE" value="add picture" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
